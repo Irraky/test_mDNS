@@ -7,13 +7,23 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-var mdns = require('mdns-js')
-mdns.excludeInterface('0.0.0.0')
+import mdns from 'mdns-js'
+import ipc from 'electron-better-ipc'
 // if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 // Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
-// Vue.use(VueSpacebroClient, settings.service.spacebro, store)
+var browser = mdns.createBrowser()
+
+browser.on('ready', function () {
+  browser.discover()
+  ipc.send('get-data', 'coin')
+})
+
+browser.on('update', function (data) {
+  console.log('data:', data)
+  ipc.send('getdata', data)
+})
 
 /* eslint-disable no-new */
 var app = new Vue({
@@ -23,17 +33,6 @@ var app = new Vue({
   data: function () {
     return {
     }
-  },
-  created () {
-    var browser = mdns.createBrowser()
-    var mydata = []
-    browser.on('ready', function () {
-      browser.discover()
-    })
-    browser.on('update', function (data) {
-      mydata.push(data)
-      console.log(mydata)
-    })
   },
   template: '<App/>'
 }).$mount('#app')

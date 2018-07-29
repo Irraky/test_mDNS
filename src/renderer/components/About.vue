@@ -29,6 +29,13 @@
 </template>
 
 <script>
+const ipc = require('electron-better-ipc')
+
+ipc.on('send-data', (event, data) => {
+  console.log('hello')
+  console.log(data)
+})
+
 export default {
   name: 'about',
   data: function () {

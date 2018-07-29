@@ -21,6 +21,12 @@
 
 <script>
 import vueJsonEditor from 'vue-json-editor'
+const ipc = require('electron-better-ipc')
+
+ipc.on('send-data', (event, data) => {
+  console.log('hello')
+  console.log(data)
+})
 
 export default {
   components: {
