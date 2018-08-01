@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow, ipcMain } from 'electron'
+import { app, BrowserWindow } from 'electron'
 import mdns from 'mdns-js'
 
 /**
@@ -77,12 +77,13 @@ browser.on('update', function (data) {
   console.log('data:', data)
 })
 
-ipcMain.on('asynchronous-message', (event, arg) => {
-  console.log(arg) // affiche "ping"
-  event.sender.send('asynchronous-reply', 'pong')
-})
+const ipc = require('electron-better-ipc')
 
-ipcMain.on('synchronous-message', (event, arg) => {
-  console.log(arg) // affiche "ping"
-  event.returnValue = 'pong'
+function getEmoji (emoji) {
+  return emoji
+}
+
+ipc.answerRenderer('get-emoji', async emojiName => {
+  const emoji = await getEmoji(emojiName)
+  return emoji
 })

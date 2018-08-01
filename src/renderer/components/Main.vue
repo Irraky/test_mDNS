@@ -21,17 +21,12 @@
 
 <script>
 import vueJsonEditor from 'vue-json-editor'
+const ipc = require('electron-better-ipc');
 
-// Dans le processus de rendu (page web).
-const {ipcRenderer} = require('electron')
-console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // affiche "pong"
-
-ipcRenderer.on('asynchronous-reply', (event, arg) => {
-  console.log(arg) // affiche "pong"
-  console.log('hey')
-})
-
-ipcRenderer.send('asynchronous-message', 'ping')
+(async () => {
+  const emoji = await ipc.callMain('get-emoji', 'unicorn')
+  console.log(emoji)
+})()
 
 export default {
   components: {
