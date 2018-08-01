@@ -1,6 +1,7 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
+import mdns from 'mdns-js'
 
 /**
  * Set `__static` path to static files in production
@@ -64,4 +65,24 @@ app.on('activate', () => {
   if (mainWindow === null) {
     createWindow()
   }
+})
+
+var browser = mdns.createBrowser()
+
+browser.on('ready', function () {
+  browser.discover()
+})
+
+browser.on('update', function (data) {
+  console.log('data:', data)
+})
+
+ipcMain.on('asynchronous-message', (event, arg) => {
+  console.log(arg) // affiche "ping"
+  event.sender.send('asynchronous-reply', 'pong')
+})
+
+ipcMain.on('synchronous-message', (event, arg) => {
+  console.log(arg) // affiche "ping"
+  event.returnValue = 'pong'
 })

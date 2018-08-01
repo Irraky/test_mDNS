@@ -1,0 +1,148 @@
+
+> jsonformat@0.0.0 dev /home/mina/Code/test/mdns
+> node .electron-vue/dev-runner.js
+
+
+  electron-vue
+  getting ready...
+
+The `setup` option is deprecated and will be removed in v3. Please update your config to use `before`
+┏ Main Process ---------------
+
+  compiling...
+
+┗ ----------------------------
+
+┏ Main Process ---------------
+
+  Hash: [1m61ddee9e5274b04ac71b[39m[22m
+  Version: webpack [1m3.12.0[39m[22m
+  Time: [1m2056[39m[22mms
+    [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
+  [1m[32mmain.js[39m[22m  206 kB       [1m0[39m[22m  [1m[32m[39m[22mmain
+     [0] [1mexternal "path"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+     [2] [1mexternal "electron"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+    [20] [1m./node_modules/electron-devtools-installer/dist/utils.js[39m[22m 1.93 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [21] [1m./src/main/index.js[39m[22m 2.01 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m[1m[31m [1 error][39m[22m
+    [27] [1mmulti ./src/main/index.dev.js ./src/main/index.js[39m[22m 40 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [28] [1m./src/main/index.dev.js[39m[22m 403 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [29] [1m./node_modules/electron-debug/index.js[39m[22m 2.52 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [30] [1m./node_modules/electron-localshortcut/index.js[39m[22m 8.36 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [40] [1m./node_modules/electron-is-dev/index.js[39m[22m 256 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [41] [1m./node_modules/electron-devtools-installer/dist/index.js[39m[22m 5.14 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [59] [1m./node_modules/babel-runtime/core-js/object/values.js[39m[22m 94 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [84] [1m./node_modules/babel-runtime/core-js/object/keys.js[39m[22m 92 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [89] [1mexternal "mdns-js"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+    [90] [1mexternal "assignment"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+    [91] [1mexternal "standard-settings"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+      + 77 hidden modules
+  
+  [1m[33mWARNING in ./node_modules/electron-debug/index.js
+  81:45-58 Critical dependency: the request of a dependency is an expression
+   @ ./node_modules/electron-debug/index.js
+   @ ./src/main/index.dev.js
+   @ multi ./src/main/index.dev.js ./src/main/index.js[39m[22m
+  
+  [1m[33mWARNING in ./node_modules/electron-debug/index.js
+  84:85-106 Critical dependency: the request of a dependency is an expression
+   @ ./node_modules/electron-debug/index.js
+   @ ./src/main/index.dev.js
+   @ multi ./src/main/index.dev.js ./src/main/index.js[39m[22m
+  
+  [1m[31mERROR in ./src/main/index.js
+  
+    ✘  http://eslint.org/docs/rules/no-multiple-empty-lines  Too many blank lines at the end of file. Max of 0 allowed  
+    src/main/index.js:89:1
+    
+     ^
+  
+  
+  ✘ 1 problem (1 error, 0 warnings)
+  
+  
+  Errors:
+    1  http://eslint.org/docs/rules/no-multiple-empty-lines
+   @ multi ./src/main/index.dev.js ./src/main/index.js[39m[22m
+
+┗ ----------------------------
+
+┏ Renderer Process -----------
+
+  Hash: [1meb7a6b7450c96e537481[39m[22m
+  Version: webpack [1m3.12.0[39m[22m
+  Time: [1m2856[39m[22mms
+                           [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+  [1m[32mimgs/jsoneditor-icons--img.svg[39m[22m    36.8 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+        [1m[32mimgs/logo_sc--assets.png[39m[22m    22.1 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+                     [1m[33mrenderer.js[39m[22m    [1m[33m4.82 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  renderer
+                      [1m[32mstyles.css[39m[22m    22.1 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m         renderer
+                      [1m[32mindex.html[39m[22m  480 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+     [0] [1m./node_modules/vue-hot-reload-api/dist/index.js[39m[22m 6.24 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+     [1] [1m./node_modules/vue/dist/vue.esm.js[39m[22m 292 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [13] [1m./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/renderer/App.vue[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [21] [1mmulti ./.electron-vue/dev-client ./src/renderer/main.js[39m[22m 40 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [22] [1m./.electron-vue/dev-client.js[39m[22m 731 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [23] [1m(webpack)-hot-middleware/client.js?noInfo=true&reload=true[39m[22m 7.77 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [25] [1mexternal "querystring"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+    [34] [1m./src/renderer/main.js[39m[22m 331 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [35] [1m./src/renderer/App.vue[39m[22m 1.84 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [36] [1m./node_modules/vue-style-loader!./node_modules/css-loader?sourceMap!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-2fa9d48e","scoped":false,"hasInlineConfig":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./src/renderer/App.vue[39m[22m 1.6 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [41] [1m./src/renderer/router/index.js[39m[22m 348 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [42] [1mexternal "vue-router"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
+    [43] [1m./src/renderer/components/Home.vue[39m[22m 1.87 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [63] [1m./src/renderer/components/About.vue[39m[22m 1.88 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [68] [1m./src/renderer/store/index.js[39m[22m 0 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+      + 59 hidden modules
+  Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+           [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
+      [1m[32mindex.html[39m[22m  1.45 MB       [1m0[39m[22m  [1m[32m[39m[22m
+         [0] [1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs[39m[22m 1.3 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+         [1] [1m./node_modules/lodash/lodash.js[39m[22m 540 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+         [2] [1m(webpack)/buildin/module.js[39m[22m 517 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  Child [1mextract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js!node_modules/vue-json-editor/assets/jsoneditor.css[39m[22m:
+                               [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
+      [1m[32mimgs/jsoneditor-icons--img.svg[39m[22m  36.8 kB        [1m[39m[22m  [1m[32m[39m[22m
+         [0] [1m./node_modules/vue-json-editor/assets/img/jsoneditor-icons.svg[39m[22m 76 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+         [1] [1m./node_modules/css-loader!./node_modules/vue-json-editor/assets/jsoneditor.css[39m[22m 24.3 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+         [2] [1m./node_modules/css-loader/lib/url/escape.js[39m[22m 448 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+         [3] [1m./node_modules/css-loader/lib/css-base.js[39m[22m 2.26 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  Gtk-Message: 11:57:09.651: Failed to load module "canberra-gtk-module"
+  Starting inspector on 127.0.0.1:5858 failed: address already in use
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  Received signal 11 <unknown> 000000000000
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  
+  ==== C stack trace ===============================
+  
+   [0x7f74419c1584]
+   [0x7f74413d6890]
+   [0x7f74419785bc]
+   [0x7f74419b0d0e]
+   [0x7f7441c44540]
+   [0x7f7441ec4348]
+   [0x7f7441ec4713]
+   [0x7f7441d635b9]
+   [0x7f7441d634e5]
+   [0x7f7441cb576b]
+   [0x7f744235212d]
+   [0x7f7441c44540]
+   [0x7f7441ec4348]
+   [0x7f7441ec3bae]
+   [0x3eec68f843fd]
+  [end of stack trace]
+  
+┗ ----------------------------
+

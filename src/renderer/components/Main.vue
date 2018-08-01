@@ -21,12 +21,17 @@
 
 <script>
 import vueJsonEditor from 'vue-json-editor'
-const ipc = require('electron-better-ipc')
 
-ipc.on('send-data', (event, data) => {
-  console.log('hello')
-  console.log(data)
+// Dans le processus de rendu (page web).
+const {ipcRenderer} = require('electron')
+console.log(ipcRenderer.sendSync('synchronous-message', 'ping')) // affiche "pong"
+
+ipcRenderer.on('asynchronous-reply', (event, arg) => {
+  console.log(arg) // affiche "pong"
+  console.log('hey')
 })
+
+ipcRenderer.send('asynchronous-message', 'ping')
 
 export default {
   components: {

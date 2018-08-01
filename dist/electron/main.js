@@ -2615,6 +2615,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_electron__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_electron___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_electron__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mdns_js__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mdns_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_mdns_js__);
+
 
 
 
@@ -2635,7 +2638,7 @@ function createWindow() {
     width: 1000
   };
 
-  options = __webpack_require__(89)(options, global.settings.window);
+  options = __webpack_require__(90)(options, global.settings.window);
   mainWindow = new __WEBPACK_IMPORTED_MODULE_2_electron__["BrowserWindow"](options);
 
   mainWindow.loadURL(winURL);
@@ -2645,7 +2648,7 @@ function createWindow() {
   });
 }
 
-global.settings = __webpack_require__(90).getSettings();
+global.settings = __webpack_require__(91).getSettings();
 
 if (global.settings.appendSwitch) {
   __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys___default()(global.settings.appendSwitch).forEach(function (key) {
@@ -2674,6 +2677,26 @@ __WEBPACK_IMPORTED_MODULE_2_electron__["app"].on('activate', function () {
   if (mainWindow === null) {
     createWindow();
   }
+});
+
+var browser = __WEBPACK_IMPORTED_MODULE_3_mdns_js___default.a.createBrowser();
+
+browser.on('ready', function () {
+  browser.discover();
+});
+
+browser.on('update', function (data) {
+  console.log('data:', data);
+});
+
+__WEBPACK_IMPORTED_MODULE_2_electron__["ipcMain"].on('asynchronous-message', function (event, arg) {
+  console.log(arg);
+  event.sender.send('asynchronous-reply', 'pong');
+});
+
+__WEBPACK_IMPORTED_MODULE_2_electron__["ipcMain"].on('synchronous-message', function (event, arg) {
+  console.log(arg);
+  event.returnValue = 'pong';
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "src/main"))
 
@@ -7835,10 +7858,16 @@ module.exports = function (KEY, exec) {
 /* 89 */
 /***/ (function(module, exports) {
 
-module.exports = require("assignment");
+module.exports = require("mdns-js");
 
 /***/ }),
 /* 90 */
+/***/ (function(module, exports) {
+
+module.exports = require("assignment");
+
+/***/ }),
+/* 91 */
 /***/ (function(module, exports) {
 
 module.exports = require("standard-settings");
