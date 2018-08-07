@@ -28,12 +28,7 @@ function getEmoji (emoji) {
     return '🦄'
   }
   return emoji
-};
-
-(async () => {
-  const emoji = await ipc.callMain('get-emoji', 'unicorn')
-  console.log(emoji)
-})()
+}
 
 export default {
   components: {

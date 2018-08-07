@@ -2929,9 +2929,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var _this2 = this;
-
-
 
 
 if (process.env.NODE_ENV !== 'development') {
@@ -2989,6 +2986,8 @@ __WEBPACK_IMPORTED_MODULE_4_electron__["app"].on('activate', function () {
   }
 });
 
+var ipc = __webpack_require__(135);
+
 var browser = __WEBPACK_IMPORTED_MODULE_5_mdns_js___default.a.createBrowser();
 browser.on('ready', function () {
   browser.discover();
@@ -3020,34 +3019,8 @@ browser.on('update', function (data) {
         }
       }, _callee, _this);
     }))();
-  }, 2000);
+  }, 1000);
 });
-
-var ipc = __webpack_require__(135);
-
-setTimeout(function () {
-  __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
-    var emoji;
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
-      while (1) {
-        switch (_context2.prev = _context2.next) {
-          case 0:
-            _context2.next = 2;
-            return ipc.callRenderer(mainWindow, 'get-emoji', 'unicorn');
-
-          case 2:
-            emoji = _context2.sent;
-
-            console.log('Received from renderer', emoji);
-
-          case 4:
-          case 'end':
-            return _context2.stop();
-        }
-      }
-    }, _callee2, _this2);
-  }))();
-}, 2000);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "src/main"))
 
 /***/ }),

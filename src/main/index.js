@@ -67,6 +67,8 @@ app.on('activate', () => {
   }
 })
 
+const ipc = require('electron-better-ipc')
+
 var browser = mdns.createBrowser()
 browser.on('ready', function () {
   browser.discover()
@@ -79,14 +81,5 @@ browser.on('update', function (data) {
       const emoji = await ipc.callRenderer(mainWindow, 'get-emoji', data)
       console.log('Received from renderer', emoji)
     })()
-  }, 2000)
+  }, 1000)
 })
-
-const ipc = require('electron-better-ipc')
-
-setTimeout(() => {
-  (async () => {
-    const emoji = await ipc.callRenderer(mainWindow, 'get-emoji', 'unicorn')
-    console.log('Received from renderer', emoji)
-  })()
-}, 2000)

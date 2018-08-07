@@ -15,14 +15,14 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Main Process ---------------
 
-  Hash: [1m539d5a31c9caf6745a23[39m[22m
+  Hash: [1m43faff00f89a4b145fc9[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m2995[39m[22mms
+  Time: [1m3017[39m[22mms
     [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
-  [1m[33mmain.js[39m[22m  [1m[33m270 kB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
+  [1m[33mmain.js[39m[22m  [1m[33m269 kB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
      [0] [1mexternal "path"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
      [6] [1mexternal "electron"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
-    [39] [1m./src/main/index.js[39m[22m 3.24 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [39] [1m./src/main/index.js[39m[22m 2.6 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
     [53] [1mmulti ./src/main/index.dev.js ./src/main/index.js[39m[22m 40 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
     [54] [1m./src/main/index.dev.js[39m[22m 403 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
     [55] [1m./node_modules/electron-debug/index.js[39m[22m 2.52 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
@@ -53,9 +53,9 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Renderer Process -----------
 
-  Hash: [1m62ff68bcab3f73c85adc[39m[22m
+  Hash: [1m88cbfdd9cf6fe062ae91[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m3443[39m[22mms
+  Time: [1m3476[39m[22mms
                            [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
   [1m[32mimgs/jsoneditor-icons--img.svg[39m[22m    36.8 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
         [1m[32mimgs/logo_sc--assets.png[39m[22m    22.1 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
@@ -96,22 +96,8 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  Debugger listening on ws://127.0.0.1:5858/2af793bf-4c19-436f-9aca-826451a41419
+  Debugger listening on ws://127.0.0.1:5858/fc69ab4e-b18f-4b6f-a6b7-b42156a65a71
   For help see https://nodejs.org/en/docs/inspector
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.45' ],
-    query: [ '_services._dns-sd._udp.local' ],
-    type: 
-     [ { name: 'nvstream',
-         protocol: 'tcp',
-         subtypes: [],
-         description: undefined } ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0' }
   
 ┗ ----------------------------
 
@@ -121,20 +107,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     query: [ '_services._dns-sd._udp.local' ],
     type: 
      [ { name: 'teamviewer',
-         protocol: 'tcp',
-         subtypes: [],
-         description: undefined } ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0' }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.94' ],
-    query: [ '_services._dns-sd._udp.local' ],
-    type: 
-     [ { name: 'nvstream_dbd',
          protocol: 'tcp',
          subtypes: [],
          description: undefined } ],
@@ -175,6 +147,20 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
+  data: { addresses: [ '192.168.2.94' ],
+    query: [ '_services._dns-sd._udp.local' ],
+    type: 
+     [ { name: 'nvstream_dbd',
+         protocol: 'tcp',
+         subtypes: [],
+         description: undefined } ],
+    interfaceIndex: 0,
+    networkInterface: 'wlp6s0' }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   data: { addresses: [ '10.60.60.2' ],
     query: [ '_services._dns-sd._udp.local' ],
     type: 
@@ -203,24 +189,10 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  data: { addresses: [ '192.168.2.187' ],
+  data: { addresses: [ '192.168.2.45' ],
     query: [ '_services._dns-sd._udp.local' ],
     type: 
      [ { name: 'nvstream',
-         protocol: 'tcp',
-         subtypes: [],
-         description: undefined } ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0' }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.122' ],
-    query: [ '_services._dns-sd._udp.local' ],
-    type: 
-     [ { name: 'apple-mobdev2',
          protocol: 'tcp',
          subtypes: [],
          description: undefined } ],
@@ -259,35 +231,57 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  data: { addresses: [ '192.168.2.123' ],
-    query: [ '_services._dns-sd._udp.local' ],
-    type: 
-     [ { name: 'dacp',
-         protocol: 'tcp',
-         subtypes: [],
-         description: 'iTunes Remote Control' },
-       { name: 'teamviewer',
-         protocol: 'tcp',
-         subtypes: [],
-         description: undefined },
-       { name: 'companion-link',
-         protocol: 'tcp',
-         subtypes: [],
-         description: undefined } ],
+  [3396:0807/163437.531212:ERROR:CONSOLE(7323)] "Extension server error: Object not found: <top>", source: chrome-devtools://devtools/bundled/inspector.js (7323)
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  Received from renderer { addresses: [ '192.168.2.94' ],
     interfaceIndex: 0,
-    networkInterface: 'wlp6s0' }
+    networkInterface: 'wlp6s0',
+    query: [ '_services._dns-sd._udp.local' ],
+    type: [ { name: 'teamviewer', protocol: 'tcp', subtypes: [] } ] }
   
 ┗ ----------------------------
 
 ┏ Electron -------------------
 
-  [28337:0807/151633.448560:ERROR:CONSOLE(7323)] "Extension server error: Object not found: <top>", source: chrome-devtools://devtools/bundled/inspector.js (7323)
+  Received from renderer { addresses: [ '192.168.2.94' ],
+    interfaceIndex: 0,
+    networkInterface: 'wlp6s0',
+    query: [ '_services._dns-sd._udp.local' ],
+    type: [ { name: 'teamviewer', protocol: 'tcp', subtypes: [] } ] }
   
 ┗ ----------------------------
 
 ┏ Electron -------------------
 
-  Received from renderer 🦄
+  Received from renderer { addresses: [ '192.168.2.94' ],
+    interfaceIndex: 0,
+    networkInterface: 'wlp6s0',
+    query: [ '_services._dns-sd._udp.local' ],
+    type: [ { name: 'teamviewer', protocol: 'tcp', subtypes: [] } ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  Received from renderer { addresses: [ '192.168.2.94' ],
+    interfaceIndex: 0,
+    networkInterface: 'wlp6s0',
+    query: [ '_services._dns-sd._udp.local' ],
+    type: [ { name: 'teamviewer', protocol: 'tcp', subtypes: [] } ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  Received from renderer { addresses: [ '192.168.2.94' ],
+    interfaceIndex: 0,
+    networkInterface: 'wlp6s0',
+    query: [ '_services._dns-sd._udp.local' ],
+    type: [ { name: 'teamviewer', protocol: 'tcp', subtypes: [] } ] }
   
 ┗ ----------------------------
 
@@ -318,259 +312,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     networkInterface: 'wlp6s0',
     query: [ '_services._dns-sd._udp.local' ],
     type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.45' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: [ { name: 'nvstream', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.123' ],
-    interfaceIndex: 0,
-    networkInterface: 'wlp6s0',
-    query: [ '_services._dns-sd._udp.local' ],
-    type: 
-     [ { description: 'iTunes Remote Control',
-         name: 'dacp',
-         protocol: 'tcp',
-         subtypes: [] },
-       { name: 'teamviewer', protocol: 'tcp', subtypes: [] },
-       { name: 'companion-link', protocol: 'tcp', subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.48' ],
-    query: [],
-    type: 
-     [ { name: 'googlecast',
-         protocol: 'tcp',
-         subtypes: [],
-         description: 'Google Chromecast' } ],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    port: 8009,
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast' }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.48' ],
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast',
-    port: 8009,
-    query: [],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    type: 
-     [ { description: 'Google Chromecast',
-         name: 'googlecast',
-         protocol: 'tcp',
-         subtypes: [] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.48' ],
-    query: [],
-    type: 
-     [ { name: 'googlecast',
-         protocol: 'tcp',
-         subtypes: [Array],
-         description: undefined } ],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    port: 8009,
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast' }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  data: { addresses: [ '192.168.2.48' ],
-    query: [],
-    type: 
-     [ { name: 'googlecast',
-         protocol: 'tcp',
-         subtypes: [Array],
-         description: undefined } ],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    port: 8009,
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast' }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.48' ],
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast',
-    port: 8009,
-    query: [],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    type: [ { name: 'googlecast', protocol: 'tcp', subtypes: [Array] } ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  Received from renderer { addresses: [ '192.168.2.48' ],
-    fullname: 'Chromecast-Ultra-7648433d2ce857a26e9b4d82989fb715._googlecast._tcp.local',
-    host: '7648433d-2ce8-57a2-6e9b-4d82989fb715.local',
-    interfaceIndex: 1,
-    networkInterface: 'pseudo multicast',
-    port: 8009,
-    query: [],
-    txt: 
-     [ 'id=7648433d2ce857a26e9b4d82989fb715',
-       'cd=9806CB1D90F3AF53EC08918E330599E3',
-       'rm=B477178DEEE72BE2',
-       've=05',
-       'md=Chromecast Ultra',
-       'ic=/setup/icon.png',
-       'fn=⚡️Plateau Ultra',
-       'ca=4101',
-       'st=0',
-       'bs=FA8FCA7CF8C5',
-       'nf=1',
-       'rs=' ],
-    type: [ { name: 'googlecast', protocol: 'tcp', subtypes: [Array] } ] }
   
 ┗ ----------------------------
 
