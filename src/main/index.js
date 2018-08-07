@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import {app, BrowserWindow} from 'electron'
 import mdns from 'mdns-js'
 
 /**
@@ -68,22 +68,25 @@ app.on('activate', () => {
 })
 
 var browser = mdns.createBrowser()
-
 browser.on('ready', function () {
   browser.discover()
 })
 
 browser.on('update', function (data) {
   console.log('data:', data)
+  setTimeout(() => {
+    (async () => {
+      const emoji = await ipc.callRenderer(mainWindow, 'get-emoji', data)
+      console.log('Received from renderer', emoji)
+    })()
+  }, 2000)
 })
 
 const ipc = require('electron-better-ipc')
 
-function getEmoji (emoji) {
-  return emoji
-}
-
-ipc.answerRenderer('get-emoji', async emojiName => {
-  const emoji = await getEmoji(emojiName)
-  return emoji
-})
+setTimeout(() => {
+  (async () => {
+    const emoji = await ipc.callRenderer(mainWindow, 'get-emoji', 'unicorn')
+    console.log('Received from renderer', emoji)
+  })()
+}, 2000)

@@ -21,7 +21,14 @@
 
 <script>
 import vueJsonEditor from 'vue-json-editor'
-const ipc = require('electron-better-ipc');
+const ipc = require('electron-better-ipc')
+
+function getEmoji (emoji) {
+  if (emoji === 'unicorn') {
+    return '🦄'
+  }
+  return emoji
+};
 
 (async () => {
   const emoji = await ipc.callMain('get-emoji', 'unicorn')
@@ -67,6 +74,14 @@ export default {
     onJsonChange (value) {
       console.log('value:', value)
     }
+  },
+  created () {
+    ipc.answerMain('get-emoji', async emojiName => {
+      console.log(emojiName)
+      const emoji = await getEmoji(emojiName)
+      console.log(emoji)
+      return emoji
+    })
   }
 }
 </script>
