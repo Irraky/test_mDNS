@@ -7,6 +7,7 @@
         <span v-for="line in lines"> {{line}} <br> </span>
         <br>
       </div>
+      <textarea ref="services"></textarea>
       <textarea v-model="myjson" ref="text" id="text" type="text" placeholder="Place your JSON here"
         v-on:scroll="keymonitor" v-on:keyup="keymonitor" v-on:keydown="keymonitor">
       </textarea>
@@ -23,11 +24,19 @@
 import vueJsonEditor from 'vue-json-editor'
 const ipc = require('electron-better-ipc')
 
-function getEmoji (emoji) {
-  if (emoji === 'unicorn') {
-    return '🦄'
+function getEmoji (newService, services) {
+  let index
+  if (newService.port) {
+    if ((index = services.indexOf(newService)) !== -1) {
+      services[index] = newService
+      console.log('CHANGE')
+    } else {
+      services.push(newService)
+      console.log('PUSH')
+    }
+  } else {
+    console.log('descrpt: ', newService.type[0].name)
   }
-  return emoji
 }
 
 export default {
@@ -39,6 +48,7 @@ export default {
   ],
   data: function () {
     return {
+      services: [],
       lines: 0,
       json: {
         msg: 'json verifier'
@@ -71,11 +81,12 @@ export default {
     }
   },
   created () {
-    ipc.answerMain('get-emoji', async emojiName => {
-      console.log(emojiName)
-      const emoji = await getEmoji(emojiName)
-      console.log(emoji)
-      return emoji
+    ipc.answerMain('send-service', async newService => {
+      await getEmoji(newService, this.services)
+      if (newService.fullname) {
+        this.$refs.services.innerHTML += newService.fullname
+        this.$refs.services.innerHTML += '\n'
+      }
     })
   }
 }

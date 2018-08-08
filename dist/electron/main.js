@@ -2990,29 +2990,23 @@ var ipc = __webpack_require__(135);
 
 var browser = __WEBPACK_IMPORTED_MODULE_5_mdns_js___default.a.createBrowser();
 browser.on('ready', function () {
+  console.log('browser ready');
   browser.discover();
 });
 
 browser.on('update', function (data) {
   var _this = this;
 
-  console.log('data:', data);
   setTimeout(function () {
     __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-      var emoji;
       return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return ipc.callRenderer(mainWindow, 'get-emoji', data);
+              return ipc.callRenderer(mainWindow, 'send-service', data);
 
             case 2:
-              emoji = _context.sent;
-
-              console.log('Received from renderer', emoji);
-
-            case 4:
             case 'end':
               return _context.stop();
           }
