@@ -24,15 +24,13 @@
 import vueJsonEditor from 'vue-json-editor'
 const ipc = require('electron-better-ipc')
 
-function getEmoji (newService, services) {
+function addService (newService, services) {
   let index
   if (newService.port) {
     if ((index = services.indexOf(newService)) !== -1) {
       services[index] = newService
-      console.log('CHANGE')
     } else {
       services.push(newService)
-      console.log('PUSH')
     }
   } else {
     console.log('descrpt: ', newService.type[0].name)
@@ -82,11 +80,8 @@ export default {
   },
   created () {
     ipc.answerMain('send-service', async newService => {
-      await getEmoji(newService, this.services)
-      if (newService.fullname) {
-        this.$refs.services.innerHTML += newService.fullname
-        this.$refs.services.innerHTML += '\n'
-      }
+      await addService(newService, this.services)
+      this.$refs.services.innerHTML = 'top'
     })
   }
 }
