@@ -80,5 +80,5 @@ browser.on('update', function (data) {
     (async () => {
       await ipc.callRenderer(mainWindow, 'send-service', data)
     })()
-  }, 1000)
+  }, 500)
 })

@@ -1,13 +1,15 @@
 <template>
   <div>
     <div class="jsonarea">
+      <div v-for="service in listServices" v-bind:key="service.name">
+          {{service.name}}<br>
+      </div>
       <!-- used ref as in API https://vuejs.org/v2/api/  -->
       <div id="myscroll" v-on:scroll="keymonitor" ref="myscroll">
         0 <br>
         <span v-for="line in lines"> {{line}} <br> </span>
         <br>
       </div>
-      <textarea ref="services"></textarea>
       <textarea v-model="myjson" ref="text" id="text" type="text" placeholder="Place your JSON here"
         v-on:scroll="keymonitor" v-on:keyup="keymonitor" v-on:keydown="keymonitor">
       </textarea>
@@ -24,17 +26,20 @@
 import vueJsonEditor from 'vue-json-editor'
 const ipc = require('electron-better-ipc')
 
-function addService (newService, services) {
-  let index
-  if (newService.port) {
-    if ((index = services.indexOf(newService)) !== -1) {
-      services[index] = newService
+function newServices (service, listServices) {
+  if (service.port) {
+    console.log(listServices.indexOf(service))
+    let newService = {}
+    newService.name = service.fullname.split('.')[0]
+    newService.id = service.addresses[0]
+    newService.port = service.port
+    if (listServices.indexOf(newService.Name) === -1) {
+      listServices.push(newService)
     } else {
-      services.push(newService)
+      console.log('out')
     }
-  } else {
-    console.log('descrpt: ', newService.type[0].name)
   }
+  console.log(listServices)
 }
 
 export default {
@@ -46,7 +51,7 @@ export default {
   ],
   data: function () {
     return {
-      services: [],
+      listServices: [{'name': 'Service Name', 'id': 'Address', 'port': 'Port'}],
       lines: 0,
       json: {
         msg: 'json verifier'
@@ -80,8 +85,8 @@ export default {
   },
   created () {
     ipc.answerMain('send-service', async newService => {
-      await addService(newService, this.services)
-      this.$refs.services.innerHTML = 'top'
+      console.log('service', newService)
+      await newServices(newService, this.listServices)
     })
   }
 }

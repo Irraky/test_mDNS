@@ -3013,7 +3013,7 @@ browser.on('update', function (data) {
         }
       }, _callee, _this);
     }))();
-  }, 1000);
+  }, 500);
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "src/main"))
 
