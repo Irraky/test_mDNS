@@ -1,7 +1,6 @@
 'use strict'
 
 import {app, BrowserWindow} from 'electron'
-import mdns from 'mdns-js'
 
 /**
  * Set `__static` path to static files in production
@@ -67,18 +66,20 @@ app.on('activate', () => {
   }
 })
 
+let mdns = require('mdns')
 const ipc = require('electron-better-ipc')
 
-var browser = mdns.createBrowser()
-browser.on('ready', function () {
-  console.log('browser ready')
-  browser.discover()
-})
+var allTheTypes = mdns.browseThemAll()
 
-browser.on('update', function (data) {
+allTheTypes.on('serviceUp', function (service) {
+  console.log('service up: ', service)
   setTimeout(() => {
     (async () => {
-      await ipc.callRenderer(mainWindow, 'send-service', data)
+      await ipc.callRenderer(mainWindow, 'send-services', service)
     })()
   }, 500)
 })
+allTheTypes.on('serviceDown', function (service) {
+  console.log('service down: ', service)
+})
+allTheTypes.start()
