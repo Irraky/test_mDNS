@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    JSON verifier
+    Services-discovery
   </div>
 </template>
 

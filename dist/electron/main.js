@@ -103,7 +103,7 @@ $exports.store = store;
 /* 3 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.6' };
+var core = module.exports = { version: '2.5.7' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -2920,14 +2920,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_electron__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_electron___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_electron__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_mdns_js__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_mdns_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_mdns_js__);
 
 
 
 
 
 
+
+var _this4 = this;
 
 
 
@@ -2945,9 +2945,8 @@ function createWindow() {
     width: 1000
   };
 
-  options = __webpack_require__(133)(options, global.settings.window);
+  options = __webpack_require__(132)(options, global.settings.window);
   mainWindow = new __WEBPACK_IMPORTED_MODULE_4_electron__["BrowserWindow"](options);
-
   mainWindow.loadURL(winURL);
 
   mainWindow.on('closed', function () {
@@ -2955,7 +2954,7 @@ function createWindow() {
   });
 }
 
-global.settings = __webpack_require__(134).getSettings();
+global.settings = __webpack_require__(133).getSettings();
 
 if (global.settings.appendSwitch) {
   __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_keys___default()(global.settings.appendSwitch).forEach(function (key) {
@@ -2986,35 +2985,95 @@ __WEBPACK_IMPORTED_MODULE_4_electron__["app"].on('activate', function () {
   }
 });
 
+var mdns = __webpack_require__(134);
+
+var resolve = [mdns.rst.DNSServiceResolve(), 'DNSServiceGetAddrInfo' in mdns.dns_sd ? mdns.rst.DNSServiceGetAddrInfo() : mdns.rst.getaddrinfo({ families: [0] }), mdns.rst.makeAddressesUnique()];
+
+var br = mdns.browseThemAll();
 var ipc = __webpack_require__(135);
 
-var browser = __WEBPACK_IMPORTED_MODULE_5_mdns_js___default.a.createBrowser();
-browser.on('ready', function () {
-  console.log('browser ready');
-  browser.discover();
-});
+br.on('serviceUp', function () {
+  var _ref = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee4(service) {
+    var serv;
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            serv = mdns.createBrowser(mdns.tcp(service.type.name), { resolverSequence: resolve });
 
-browser.on('update', function (data) {
-  var _this = this;
+            serv.on('serviceUp', function (service) {
+              var _this = this;
 
-  setTimeout(function () {
-    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-      return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return ipc.callRenderer(mainWindow, 'send-service', data);
+              console.log('new service up: ', service);
+              __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                  while (1) {
+                    switch (_context.prev = _context.next) {
+                      case 0:
+                        _context.next = 2;
+                        return ipc.callRenderer(mainWindow, 'send-services', service);
 
-            case 2:
-            case 'end':
-              return _context.stop();
-          }
+                      case 2:
+                      case 'end':
+                        return _context.stop();
+                    }
+                  }
+                }, _callee, _this);
+              }))();
+            }).on('serviceChanged', function (service) {
+              var _this2 = this;
+
+              console.log('service changed: ', service);
+              __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+                  while (1) {
+                    switch (_context2.prev = _context2.next) {
+                      case 0:
+                        _context2.next = 2;
+                        return ipc.callRenderer(mainWindow, 'change-services', service);
+
+                      case 2:
+                      case 'end':
+                        return _context2.stop();
+                    }
+                  }
+                }, _callee2, _this2);
+              }))();
+            }).on('serviceDown', function (service) {
+              var _this3 = this;
+
+              console.log('down');
+              __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee3() {
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+                  while (1) {
+                    switch (_context3.prev = _context3.next) {
+                      case 0:
+                        _context3.next = 2;
+                        return ipc.callRenderer(mainWindow, 'down-services', service);
+
+                      case 2:
+                      case 'end':
+                        return _context3.stop();
+                    }
+                  }
+                }, _callee3, _this3);
+              }))();
+            }).start();
+
+          case 2:
+          case 'end':
+            return _context4.stop();
         }
-      }, _callee, _this);
-    }))();
-  }, 500);
-});
+      }
+    }, _callee4, _this4);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}());
+
+br.start();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "src/main"))
 
 /***/ }),
@@ -7966,7 +8025,7 @@ function map_obj(obj, fn){
 /* 83 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[["7zip@0.0.6","/home/mina/Code/test/mdns_test/node_modules/electron-devtools-installer"]],"_from":"7zip@0.0.6","_id":"7zip@0.0.6","_inCache":true,"_installable":true,"_location":"/7zip","_nodeVersion":"5.11.0","_npmOperationalInternal":{"host":"packages-12-west.internal.npmjs.com","tmp":"tmp/7zip-0.0.6.tgz_1463274735811_0.1922009070403874"},"_npmUser":{"email":"uxfritz@163.com","name":"fritx"},"_npmVersion":"3.8.6","_phantomChildren":{},"_requested":{"name":"7zip","raw":"7zip@0.0.6","rawSpec":"0.0.6","scope":null,"spec":"0.0.6","type":"version"},"_requiredBy":["/electron-devtools-installer"],"_resolved":"https://registry.npmjs.org/7zip/-/7zip-0.0.6.tgz","_shasum":"9cafb171af82329490353b4816f03347aa150a30","_shrinkwrap":null,"_spec":"7zip@0.0.6","_where":"/home/mina/Code/test/mdns_test/node_modules/electron-devtools-installer","bin":{"7z":"7zip-lite/7z.exe"},"bugs":{"url":"https://github.com/fritx/win-7zip/issues"},"dependencies":{},"description":"7zip Windows Package via Node.js","devDependencies":{},"directories":{},"dist":{"shasum":"9cafb171af82329490353b4816f03347aa150a30","tarball":"https://registry.npmjs.org/7zip/-/7zip-0.0.6.tgz"},"gitHead":"ece5481873f357545c99a9e2f9e1cdb3fe76de2d","homepage":"https://github.com/fritx/win-7zip#readme","keywords":["7-zip","7z","7zip","install","windows"],"license":"GNU LGPL","main":"index.js","maintainers":[{"name":"fritx","email":"uxfritz@163.com"}],"name":"7zip","optionalDependencies":{},"readme":"ERROR: No README data found!","repository":{"type":"git","url":"git+ssh://git@github.com/fritx/win-7zip.git"},"scripts":{"test":"mocha"},"version":"0.0.6"}
+module.exports = {"_args":[["7zip@0.0.6","/home/mina/Code/test/test_mDNS/node_modules/electron-devtools-installer"]],"_from":"7zip@0.0.6","_id":"7zip@0.0.6","_inCache":true,"_installable":true,"_location":"/7zip","_nodeVersion":"5.11.0","_npmOperationalInternal":{"host":"packages-12-west.internal.npmjs.com","tmp":"tmp/7zip-0.0.6.tgz_1463274735811_0.1922009070403874"},"_npmUser":{"email":"uxfritz@163.com","name":"fritx"},"_npmVersion":"3.8.6","_phantomChildren":{},"_requested":{"name":"7zip","raw":"7zip@0.0.6","rawSpec":"0.0.6","scope":null,"spec":"0.0.6","type":"version"},"_requiredBy":["/electron-devtools-installer"],"_resolved":"https://registry.npmjs.org/7zip/-/7zip-0.0.6.tgz","_shasum":"9cafb171af82329490353b4816f03347aa150a30","_shrinkwrap":null,"_spec":"7zip@0.0.6","_where":"/home/mina/Code/test/test_mDNS/node_modules/electron-devtools-installer","bin":{"7z":"7zip-lite/7z.exe"},"bugs":{"url":"https://github.com/fritx/win-7zip/issues"},"dependencies":{},"description":"7zip Windows Package via Node.js","devDependencies":{},"directories":{},"dist":{"shasum":"9cafb171af82329490353b4816f03347aa150a30","tarball":"https://registry.npmjs.org/7zip/-/7zip-0.0.6.tgz"},"gitHead":"ece5481873f357545c99a9e2f9e1cdb3fe76de2d","homepage":"https://github.com/fritx/win-7zip#readme","keywords":["7-zip","7z","7zip","install","windows"],"license":"GNU LGPL","main":"index.js","maintainers":[{"name":"fritx","email":"uxfritz@163.com"}],"name":"7zip","optionalDependencies":{},"readme":"ERROR: No README data found!","repository":{"type":"git","url":"git+ssh://git@github.com/fritx/win-7zip.git"},"scripts":{"test":"mocha"},"version":"0.0.6"}
 
 /***/ }),
 /* 84 */
@@ -7985,12 +8044,16 @@ module.exports = __webpack_require__(86);
 /* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 // This method of obtaining a reference to the global object needs to be
 // kept identical to the way it is obtained in runtime.js
-var g =
-  typeof global === "object" ? global :
-  typeof window === "object" ? window :
-  typeof self === "object" ? self : this;
+var g = (function() { return this })() || Function("return this")();
 
 // Use `getOwnPropertyNames` because not all browsers support calling
 // `hasOwnProperty` on the global `self` object in a worker. See #183.
@@ -8023,13 +8086,10 @@ if (hadRuntime) {
 /***/ (function(module, exports) {
 
 /**
- * Copyright (c) 2014, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) 2014-present, Facebook, Inc.
  *
- * This source code is licensed under the BSD-style license found in the
- * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
- * additional grant of patent rights can be found in the PATENTS file in
- * the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 !(function(global) {
@@ -8212,10 +8272,6 @@ if (hadRuntime) {
           resolve(result);
         }, reject);
       }
-    }
-
-    if (typeof global.process === "object" && global.process.domain) {
-      invoke = global.process.domain.bind(invoke);
     }
 
     var previousPromise;
@@ -8751,12 +8807,10 @@ if (hadRuntime) {
     }
   };
 })(
-  // Among the various tricks for obtaining a reference to the global
-  // object, this seems to be the most reliable technique that does not
-  // use indirect eval (which violates Content Security Policy).
-  typeof global === "object" ? global :
-  typeof window === "object" ? window :
-  typeof self === "object" ? self : this
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() { return this })() || Function("return this")()
 );
 
 
@@ -9877,19 +9931,19 @@ module.exports = function (KEY, exec) {
 /* 132 */
 /***/ (function(module, exports) {
 
-module.exports = require("mdns-js");
+module.exports = require("assignment");
 
 /***/ }),
 /* 133 */
 /***/ (function(module, exports) {
 
-module.exports = require("assignment");
+module.exports = require("standard-settings");
 
 /***/ }),
 /* 134 */
 /***/ (function(module, exports) {
 
-module.exports = require("standard-settings");
+module.exports = require("mdns");
 
 /***/ }),
 /* 135 */

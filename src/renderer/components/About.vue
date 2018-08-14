@@ -9,7 +9,6 @@
         The tree structure is here to make everyone understand and modify the JSON easily.
       </p>
       <h2>Who</h2>
-      <button @click='coin'>hhry</button>
       <p>
         Irraky, from <a href="http://www.soixantecircuits.fr/">Soixante circuits</a>
       </p>
@@ -29,24 +28,9 @@
 </template>
 
 <script>
-const ipc = require('electron-better-ipc')
-
-ipc.on('send-data', (event, data) => {
-  console.log('hello')
-  console.log(data)
-})
 
 export default {
-  name: 'about',
-  data: function () {
-    return {
-    }
-  },
-  methods: {
-    coin: function () {
-      console.log('coin')
-    }
-  }
+  name: 'about'
 }
 </script>
 

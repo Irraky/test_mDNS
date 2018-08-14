@@ -27,7 +27,6 @@ function createWindow () {
 
   options = require('assignment')(options, global.settings.window)
   mainWindow = new BrowserWindow(options)
-
   mainWindow.loadURL(winURL)
 
   mainWindow.on('closed', () => {
@@ -66,20 +65,41 @@ app.on('activate', () => {
   }
 })
 
-let mdns = require('mdns')
+const mdns = require('mdns')
+
+const resolve = [
+  mdns.rst.DNSServiceResolve(),
+  'DNSServiceGetAddrInfo' in mdns.dns_sd
+    ? mdns.rst.DNSServiceGetAddrInfo()
+    : mdns.rst.getaddrinfo({ families: [0] }),
+  mdns.rst.makeAddressesUnique()
+]
+
+const br = mdns.browseThemAll()
 const ipc = require('electron-better-ipc')
 
-var allTheTypes = mdns.browseThemAll()
+br.on('serviceUp', async service => {
+  const serv = mdns.createBrowser(mdns.tcp(service.type.name), { resolverSequence: resolve })
+  serv
+    .on('serviceUp', function (service) {
+      console.log('new service up: ', service);
+      (async () => {
+        await ipc.callRenderer(mainWindow, 'send-services', service)
+      })()
+    })
+    .on('serviceChanged', function (service) {
+      console.log('service changed: ', service);
+      (async () => {
+        await ipc.callRenderer(mainWindow, 'change-services', service)
+      })()
+    })
+    .on('serviceDown', function (service) {
+      console.log('down');
+      (async () => {
+        await ipc.callRenderer(mainWindow, 'down-services', service)
+      })()
+    })
+    .start()
+})
 
-allTheTypes.on('serviceUp', function (service) {
-  console.log('service up: ', service)
-  setTimeout(() => {
-    (async () => {
-      await ipc.callRenderer(mainWindow, 'send-services', service)
-    })()
-  }, 500)
-})
-allTheTypes.on('serviceDown', function (service) {
-  console.log('service down: ', service)
-})
-allTheTypes.start()
+br.start()
