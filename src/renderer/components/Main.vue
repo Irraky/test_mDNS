@@ -12,7 +12,7 @@
       <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
         <td>{{ service.name }}</td>
         <td>{{ service.port }}</td> 
-        <td>{{ service.addresses }}</td>
+        <td>{{ service.addresses[0] }}</td>
       </tr>
     </tbody>
   </table>
@@ -49,7 +49,13 @@ export default {
       }
     })
     ipc.answerMain('down-services', async newService => {
-      console.log('down: ', newService.name)
+      console.log(newService)
+      for (var i = 0; i < this.listServices.length; i++) {
+        if (this.listServices[i].name === newService.name) {
+          break
+        }
+      }
+      this.listServices.splice(i, 1)
     })
   }
 }
