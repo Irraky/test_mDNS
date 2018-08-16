@@ -1,8 +1,26 @@
 <template>
   <div class="jsonarea">
-    <div v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
-      {{service.name}} {{service.port}}  {{service.addresses}}<br>
-    </div>
+  <table class="tableau">
+    <thead>
+      <tr>
+        <th>Service Name</th>
+        <th>Address</th>
+        <th>Port</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
+        <td>{{ service.name | uppercase }}</td>
+        <td>{{ service.port || service}}</td> 
+        <td>{{ service.addresses }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
+    <td>{{ service.name | uppercase }}</td>
+    <td>{{ service.port || service}}</td> 
+    <td>{{ service.addresses }}</td>
+  </tr>
   </div>
 </template>
 
@@ -17,15 +35,10 @@ export default {
   },
   created () {
     this.listServices = []
-    this.listServices.push({'name': 'Service Name', 'id': 'Address', 'port': 'Port'})
     console.log('length: ', this.listServices.length)
     ipc.answerMain('send-services', async newService => {
-      if (this.listServices.indexOf(newService) === -1) {
-        if (newService.port) {
-          console.log('new: ', newService.name)
-          this.listServices.push({newService})
-        }
-      }
+      console.log('new: ', newService.name)
+      this.listServices.push(newService)
       console.log('Result: ', this.listServices)
     })
     ipc.answerMain('change-services', async newService => {
@@ -42,8 +55,29 @@ export default {
 <style>
 .jsonarea {
   display: inline-block;
-  width: 40%;
   min-width: 200px;
 }
 
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    
+}
+
+th{
+  font-weight: bold;
+}
+
+td{
+  overflow: auto;
+}
 </style>

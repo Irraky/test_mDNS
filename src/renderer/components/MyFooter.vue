@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link id="about" to="/About">About</router-link>
+    @irraky
   </div>
 </template>
 
