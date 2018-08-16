@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses" @click="hey(service)">
+      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses" @click="serviceDetails(service)">
         <td>{{ service.name }}</td>
         <td>{{ service.port }}</td> 
         <td>{{ service.addresses[0] }}</td>
@@ -29,8 +29,8 @@ export default {
     }
   },
   methods: {
-    hey: function (service) {
-      alert(service.name)
+    serviceDetails: function (service) {
+      alert(JSON.stringify(service), service.name)
       console.log(service)
     }
   },
