@@ -16,11 +16,6 @@
       </tr>
     </tbody>
   </table>
-  <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
-    <td>{{ service.name | uppercase }}</td>
-    <td>{{ service.port || service}}</td> 
-    <td>{{ service.addresses }}</td>
-  </tr>
   </div>
 </template>
 
