@@ -87,12 +87,6 @@ br.on('serviceUp', async service => {
         await ipc.callRenderer(mainWindow, 'send-services', service)
       })()
     })
-    .on('serviceChanged', function (service) {
-      console.log('service changed: ', service);
-      (async () => {
-        await ipc.callRenderer(mainWindow, 'change-services', service)
-      })()
-    })
     .on('serviceDown', function (service) {
       console.log('down');
       (async () => {

@@ -12,7 +12,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-var app = new Vue({
+new Vue({
   components: { App },
   router,
   store,
@@ -22,5 +22,3 @@ var app = new Vue({
   },
   template: '<App/>'
 }).$mount('#app')
-
-console.log(app)

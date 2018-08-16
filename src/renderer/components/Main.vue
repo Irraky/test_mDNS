@@ -10,8 +10,8 @@
     </thead>
     <tbody>
       <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
-        <td>{{ service.name | uppercase }}</td>
-        <td>{{ service.port || service}}</td> 
+        <td>{{ service.name }}</td>
+        <td>{{ service.port }}</td> 
         <td>{{ service.addresses }}</td>
       </tr>
     </tbody>
@@ -30,15 +30,23 @@ export default {
   },
   created () {
     this.listServices = []
-    console.log('length: ', this.listServices.length)
     ipc.answerMain('send-services', async newService => {
-      console.log('new: ', newService.name)
-      this.listServices.push(newService)
-      console.log('Result: ', this.listServices)
-    })
-    ipc.answerMain('change-services', async newService => {
-      console.log('change: ', newService.name)
-      this.listServices.push(newService)
+      if (newService.port && newService.name && newService.addresses[0]) {
+        var exist = 0
+        for (var i = 0; i < this.listServices.length; i++) {
+          if (this.listServices[i].addresses[0] === newService.addresses[0] &&
+          this.listServices[i].port === newService.port &&
+          this.listServices[i].name === newService.name) {
+            exist = 1
+            break
+          }
+        }
+        if (exist === 0) {
+          this.listServices.push(newService)
+        } else {
+          this.listServices.splice(i, 1, newService)
+        }
+      }
     })
     ipc.answerMain('down-services', async newService => {
       console.log('down: ', newService.name)
@@ -68,11 +76,22 @@ th, td {
     
 }
 
-th{
+th {
   font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #21abca;
+  color: white;
 }
 
-td{
-  overflow: auto;
+tr:nth-child(even ){
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #ddd;
+}
+td {
+  overflow: auto; 
 }
 </style>

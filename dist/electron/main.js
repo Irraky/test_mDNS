@@ -2927,7 +2927,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var _this4 = this;
+var _this3 = this;
 
 
 
@@ -2993,11 +2993,11 @@ var br = mdns.browseThemAll();
 var ipc = __webpack_require__(135);
 
 br.on('serviceUp', function () {
-  var _ref = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee4(service) {
+  var _ref = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee3(service) {
     var serv;
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
       while (1) {
-        switch (_context4.prev = _context4.next) {
+        switch (_context3.prev = _context3.next) {
           case 0:
             serv = mdns.createBrowser(mdns.tcp(service.type.name), { resolverSequence: resolve });
 
@@ -3020,17 +3020,17 @@ br.on('serviceUp', function () {
                   }
                 }, _callee, _this);
               }))();
-            }).on('serviceChanged', function (service) {
+            }).on('serviceDown', function (service) {
               var _this2 = this;
 
-              console.log('service changed: ', service);
+              console.log('down');
               __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
                 return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
                   while (1) {
                     switch (_context2.prev = _context2.next) {
                       case 0:
                         _context2.next = 2;
-                        return ipc.callRenderer(mainWindow, 'change-services', service);
+                        return ipc.callRenderer(mainWindow, 'down-services', service);
 
                       case 2:
                       case 'end':
@@ -3039,33 +3039,14 @@ br.on('serviceUp', function () {
                   }
                 }, _callee2, _this2);
               }))();
-            }).on('serviceDown', function (service) {
-              var _this3 = this;
-
-              console.log('down');
-              __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee3() {
-                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
-                  while (1) {
-                    switch (_context3.prev = _context3.next) {
-                      case 0:
-                        _context3.next = 2;
-                        return ipc.callRenderer(mainWindow, 'down-services', service);
-
-                      case 2:
-                      case 'end':
-                        return _context3.stop();
-                    }
-                  }
-                }, _callee3, _this3);
-              }))();
             }).start();
 
           case 2:
           case 'end':
-            return _context4.stop();
+            return _context3.stop();
         }
       }
-    }, _callee4, _this4);
+    }, _callee3, _this3);
   }));
 
   return function (_x) {
