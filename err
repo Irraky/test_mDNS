@@ -17,7 +17,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
   Hash: [1m9fdee5b70af635fa43c3[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m2389[39m[22mms
+  Time: [1m2488[39m[22mms
     [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
   [1m[33mmain.js[39m[22m  [1m[33m270 kB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
      [0] [1mexternal "path"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
@@ -53,9 +53,9 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Renderer Process -----------
 
-  Hash: [1m65bade1779a450280367[39m[22m
+  Hash: [1m052cf69552e60a6a1652[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m2795[39m[22mms
+  Time: [1m2900[39m[22mms
         [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
   [1m[33mrenderer.js[39m[22m    [1m[33m1.41 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  renderer
    [1m[32mindex.html[39m[22m  448 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
@@ -86,7 +86,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  Debugger listening on ws://127.0.0.1:5858/83b3413a-0f42-4eb3-b3f6-ba41fa2411bb
+  Debugger listening on ws://127.0.0.1:5858/17cb46d0-da25-4fc2-9b13-ba3e5d7fdb21
   For help see https://nodejs.org/en/docs/inspector
   
 ┗ ----------------------------
@@ -109,111 +109,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -271,20 +166,32 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'snap',
+       name: 'uscan',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'caribou-2',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
+    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    txtRecord: 
+     { duplex: 'T',
+       is: 'adf,platen',
+       cs: 'binary,grayscale,color',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       pdl: 'application/pdf,image/jpeg',
+       note: '',
+       ty: 'Brother MFC-J6930DW',
+       rs: 'eSCL',
+       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       vers: '2.62',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -293,20 +200,126 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'snap',
+       name: 'privet',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'caribou-3',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
+    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
+    txtRecord: 
+     { cs: 'offline',
+       id: '',
+       type: 'printer',
+       url: 'https://www.google.com/cloudprint',
+       note: 'Brother MFC-J6930DW [3c2af44e0785]',
+       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'bifrost',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'buffle',
+    networkInterface: 'enp3s0',
+    fullname: 'buffle._bifrost._tcp.local.',
+    host: 'buffle.local.',
+    port: 3002,
+    addresses: [ '192.168.2.61' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'privet',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
+    txtRecord: 
+     { cs: 'offline',
+       id: '',
+       type: 'printer',
+       url: 'https://www.google.com/cloudprint',
+       note: 'Brother MFC-J6930DW [3c2af44e0785]',
+       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'ipp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 631,
+    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
+    txtRecord: 
+     { 'mopria-certified': '1.3',
+       print_wfds: 'T',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       PaperMax: 'tabloid-A3',
+       kind: 'document,envelope,postcard,photo',
+       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
+       rfo: 'ipp/faxout',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '25',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'ipp/print',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -336,67 +349,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        ty: 'Brother MFC-J6930DW',
        adminurl: 'http://BRN3C2AF44E0785.local./',
        note: '',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'bifrost',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'buffle',
-    networkInterface: 'enp3s0',
-    fullname: 'buffle._bifrost._tcp.local.',
-    host: 'buffle.local.',
-    port: 3002,
-    addresses: [ '192.168.2.61' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'uscan',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
-    txtRecord: 
-     { duplex: 'T',
-       is: 'adf,platen',
-       cs: 'binary,grayscale,color',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       pdl: 'application/pdf,image/jpeg',
-       note: '',
-       ty: 'Brother MFC-J6930DW',
-       rs: 'eSCL',
-       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       vers: '2.62',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -446,56 +398,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'privet',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
-    txtRecord: 
-     { cs: 'offline',
-       id: '',
-       type: 'printer',
-       url: 'https://www.google.com/cloudprint',
-       note: 'Brother MFC-J6930DW [3c2af44e0785]',
-       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'scanner',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 54921,
-    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
-    txtRecord: 
-     { flatbed: 'T',
-       feeder: 'T',
-       button: 'T',
-       mdl: 'MFC-J6930DW',
-       mfg: 'Brother',
-       ty: 'Brother MFC-J6930DW',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       note: '',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
        name: 'ipp',
        protocol: 'tcp',
        subtypes: [],
@@ -538,26 +440,93 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'teamviewer',
+       name: 'scanner',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: '0',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: '0._teamviewer._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 35 61 39 34 35 37 61 39 2d 39 65 30 66 2d 34 30 36 64 2d 62 61 38 35 2d 61 31 31 35 62 62 65 64 36 39 61 32 16 54 6f 6b 65 6e 3d 68 ... >,
+    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 54921,
+    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
     txtRecord: 
-     { UUID: '5a9457a9-9e0f-406d-ba85-a115bbed69a2',
-       Token: 'hDPLx2ch7zT0i0R8',
-       DyngateID: '0' },
-    addresses: [ '192.168.2.157' ] }
+     { flatbed: 'T',
+       feeder: 'T',
+       button: 'T',
+       mdl: 'MFC-J6930DW',
+       mfg: 'Brother',
+       ty: 'Brother MFC-J6930DW',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       note: '',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  (node:30155) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
+  (node:30155) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'printer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 515,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '50',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'duerqxesz5090',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -592,217 +561,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        product: '(Brother MFC-J6930DW)',
        ty: 'Brother MFC-J6930DW',
        note: '',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'printer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 515,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
-    txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '50',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       rp: 'duerqxesz5090',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'privet',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
-    txtRecord: 
-     { cs: 'offline',
-       id: '',
-       type: 'printer',
-       url: 'https://www.google.com/cloudprint',
-       note: 'Brother MFC-J6930DW [3c2af44e0785]',
-       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'ipp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 631,
-    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
-    txtRecord: 
-     { 'mopria-certified': '1.3',
-       print_wfds: 'T',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       PaperMax: 'tabloid-A3',
-       kind: 'document,envelope,postcard,photo',
-       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
-       rfo: 'ipp/faxout',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '25',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       rp: 'ipp/print',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'printer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 515,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
-    txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '50',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       rp: 'duerqxesz5090',
        pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
        qtotal: '1',
        txtvers: '1' },
@@ -832,57 +590,10 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'teamviewer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: '967148895',
-    networkInterface: 'enp3s0',
-    fullname: '967148895._teamviewer._tcp.local.',
-    host: 'DESKTOP-F0F9UHP.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 30 66 36 32 65 63 34 2d 65 31 32 62 2d 34 63 35 66 2d 61 33 63 66 2d 61 32 35 36 65 65 39 37 61 31 30 37 16 54 6f 6b 65 6e 3d 31 ... >,
-    txtRecord: 
-     { UUID: 'e0f62ec4-e12b-4c5f-a3cf-a256ee97a107',
-       Token: '13OSKlE3pVljoTkU',
-       DyngateID: '967148895' },
-    addresses: [ '192.168.2.94' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'pdl-datastream',
+       name: 'printer',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -890,14 +601,14 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 9100,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    port: 515,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
     txtRecord: 
      { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'T',
-       Transparent: 'F',
+       TBCP: 'F',
+       Transparent: 'T',
        Binary: 'T',
        PaperCustom: 'T',
        Scan: 'T',
@@ -908,11 +619,12 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        usb_CMD: 'HBP,PJL',
        usb_MDL: 'MFC-J6930DW',
        usb_MFG: 'Brother',
-       priority: '75',
+       priority: '50',
        adminurl: 'http://BRN3C2AF44E0785.local./',
        product: '(Brother MFC-J6930DW)',
        ty: 'Brother MFC-J6930DW',
        note: '',
+       rp: 'duerqxesz5090',
        pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
        qtotal: '1',
        txtvers: '1' },
@@ -956,28 +668,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.1.36' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
   
 ┗ ----------------------------
 
@@ -1069,6 +759,49 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'pdl-datastream',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 9100,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'T',
+       Transparent: 'F',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '75',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'xrdovertcp',
        protocol: 'tcp',
        subtypes: [],
@@ -1109,17 +842,47 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'afpovertcp',
+       name: 'teamviewer',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'vMacpro1',
+    name: '967148895',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._afpovertcp._tcp.local.',
+    fullname: '967148895._teamviewer._tcp.local.',
+    host: 'DESKTOP-F0F9UHP.local.',
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 30 66 36 32 65 63 34 2d 65 31 32 62 2d 34 63 35 66 2d 61 33 63 66 2d 61 32 35 36 65 65 39 37 61 31 30 37 16 54 6f 6b 65 6e 3d 31 ... >,
+    txtRecord: 
+     { UUID: 'e0f62ec4-e12b-4c5f-a3cf-a256ee97a107',
+       Token: '13OSKlE3pVljoTkU',
+       DyngateID: '967148895' },
+    addresses: [ '192.168.2.94' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'teamviewer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: '0',
+    networkInterface: 'enp3s0',
+    fullname: '0._teamviewer._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 548,
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 35 61 39 34 35 37 61 39 2d 39 65 30 66 2d 34 30 36 64 2d 62 61 38 35 2d 61 31 31 35 62 62 65 64 36 39 61 32 16 54 6f 6b 65 6e 3d 68 ... >,
+    txtRecord: 
+     { UUID: '5a9457a9-9e0f-406d-ba85-a115bbed69a2',
+       Token: 'hDPLx2ch7zT0i0R8',
+       DyngateID: '0' },
     addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
@@ -1169,6 +932,33 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._companion-link._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 49185,
+    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
+    txtRecord: 
+     { rpHA: '8e7cc4b9a11d',
+       rpHN: 'e71e6c7aa7d3',
+       rpHI: '16816e055980',
+       rpVr: '152.1',
+       rpBA: '82:76:39:20:15:A0' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'afpovertcp',
        protocol: 'tcp',
        subtypes: [],
@@ -1181,28 +971,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     host: 'vMacpro1.local.',
     port: 548,
     addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
   
 ┗ ----------------------------
 
@@ -1236,6 +1004,21 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'companion-link',
        protocol: 'tcp',
        subtypes: [],
@@ -1255,11 +1038,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        rpVr: '152.1',
        rpBA: '82:76:39:20:15:A0' },
     addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -1283,7 +1061,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'companion-link',
+       name: 'afpovertcp',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -1291,76 +1069,10 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._companion-link._tcp.local.',
+    fullname: 'vMacpro1._afpovertcp._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 49185,
-    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
-    txtRecord: 
-     { rpHA: '8e7cc4b9a11d',
-       rpHN: 'e71e6c7aa7d3',
-       rpHI: '16816e055980',
-       rpVr: '152.1',
-       rpBA: '82:76:39:20:15:A0' },
+    port: 548,
     addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
   
 ┗ ----------------------------
 
@@ -1381,72 +1093,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     host: 'SKprint.local.',
     port: 80,
     addresses: [ '192.168.1.36' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
   
 ┗ ----------------------------
 
@@ -1477,152 +1123,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'snap',
+       name: 'nvstream',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'caribou-2',
+    name: 'CASTOR',
     networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
+    fullname: 'CASTOR._nvstream._tcp.local.',
+    host: 'castor.local.',
+    port: 47989,
+    addresses: [ '192.168.2.187' ] }
   
 ┗ ----------------------------
 
@@ -1734,7 +1246,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'uscan',
+       name: 'scanner',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -1742,22 +1254,19 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    port: 54921,
+    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
     txtRecord: 
-     { duplex: 'T',
-       is: 'adf,platen',
-       cs: 'binary,grayscale,color',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       pdl: 'application/pdf,image/jpeg',
-       note: '',
+     { flatbed: 'T',
+       feeder: 'T',
+       button: 'T',
+       mdl: 'MFC-J6930DW',
+       mfg: 'Brother',
        ty: 'Brother MFC-J6930DW',
-       rs: 'eSCL',
-       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       vers: '2.62',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       note: '',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -1868,6 +1377,40 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        rp: 'ipp/print',
        pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
        qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'uscan',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    txtRecord: 
+     { duplex: 'T',
+       is: 'adf,platen',
+       cs: 'binary,grayscale,color',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       pdl: 'application/pdf,image/jpeg',
+       note: '',
+       ty: 'Brother MFC-J6930DW',
+       rs: 'eSCL',
+       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       vers: '2.62',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -1961,93 +1504,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'scanner',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 54921,
-    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
-    txtRecord: 
-     { flatbed: 'T',
-       feeder: 'T',
-       button: 'T',
-       mdl: 'MFC-J6930DW',
-       mfg: 'Brother',
-       ty: 'Brother MFC-J6930DW',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       note: '',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'printer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 515,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
-    txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '50',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       rp: 'duerqxesz5090',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: type nvstream_dbd may only contain alphanumeric characters and hyphens
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
        name: 'ipp',
        protocol: 'tcp',
        subtypes: [],
@@ -2090,15 +1546,10 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'pdl-datastream',
+       name: 'printer',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -2106,14 +1557,14 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 9100,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    port: 515,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
     txtRecord: 
      { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'T',
-       Transparent: 'F',
+       TBCP: 'F',
+       Transparent: 'T',
        Binary: 'T',
        PaperCustom: 'T',
        Scan: 'T',
@@ -2124,20 +1575,16 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        usb_CMD: 'HBP,PJL',
        usb_MDL: 'MFC-J6930DW',
        usb_MFG: 'Brother',
-       priority: '75',
+       priority: '50',
        adminurl: 'http://BRN3C2AF44E0785.local./',
        product: '(Brother MFC-J6930DW)',
        ty: 'Brother MFC-J6930DW',
        note: '',
+       rp: 'duerqxesz5090',
        pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -2177,6 +1624,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
+  (node:30155) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: type nvstream_dbd may only contain alphanumeric characters and hyphens
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  (node:30155) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -2215,6 +1674,87 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'pdl-datastream',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 9100,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'T',
+       Transparent: 'F',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '75',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'pdl-datastream',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-7860DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-7860DW._pdl-datastream._tcp.local.',
+    host: 'SKprint.local.',
+    port: 9100,
+    rawTxtRecord: <Buffer 06 54 42 43 50 3d 54 0d 54 72 61 6e 73 70 61 72 65 6e 74 3d 46 08 42 69 6e 61 72 79 3d 54 0d 50 61 70 65 72 43 75 73 74 6f 6d 3d 54 08 44 75 70 6c 65 ... >,
+    txtRecord: 
+     { TBCP: 'T',
+       Transparent: 'F',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Duplex: 'F',
+       Copies: 'T',
+       Color: 'F',
+       usb_MDL: 'MFC-7860DW',
+       usb_MFG: 'Brother',
+       priority: '25',
+       adminurl: 'http://SKprint.local./',
+       product: '(Brother MFC-7860DW)',
+       ty: 'Brother MFC-7860DW',
+       pdl: 'application/vnd.hp-PCL',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.1.36' ] }
   
 ┗ ----------------------------
 
@@ -2257,36 +1797,98 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'pdl-datastream',
+       name: 'http',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-7860DW',
+    name: 'vMacpro1 (2)',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-7860DW._pdl-datastream._tcp.local.',
-    host: 'SKprint.local.',
-    port: 9100,
-    rawTxtRecord: <Buffer 06 54 42 43 50 3d 54 0d 54 72 61 6e 73 70 61 72 65 6e 74 3d 46 08 42 69 6e 61 72 79 3d 54 0d 50 61 70 65 72 43 75 73 74 6f 6d 3d 54 08 44 75 70 6c 65 ... >,
-    txtRecord: 
-     { TBCP: 'T',
-       Transparent: 'F',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Duplex: 'F',
-       Copies: 'T',
-       Color: 'F',
-       usb_MDL: 'MFC-7860DW',
-       usb_MFG: 'Brother',
-       priority: '25',
-       adminurl: 'http://SKprint.local./',
-       product: '(Brother MFC-7860DW)',
-       ty: 'Brother MFC-7860DW',
-       pdl: 'application/vnd.hp-PCL',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.1.36' ] }
+    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8918,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8919,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'xrdovertcp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 5454,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'afpovertcp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._afpovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 548,
+    addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
 
@@ -2347,46 +1949,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     host: 'vMacpro1.local.',
     port: 8919,
     addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'xrdovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 5454,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -2420,73 +1982,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'afpovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._afpovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 548,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'xrdovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 5454,
-    addresses: [ '192.168.2.157' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
        name: 'http',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'vMacpro1',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8919,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1 (2)',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8918,
-    addresses: [ '192.168.2.157' ] }
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -2520,6 +2027,46 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'xrdovertcp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 5454,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-7860DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-7860DW._http._tcp.local.',
+    host: 'SKprint.local.',
+    port: 80,
+    addresses: [ '192.168.1.36' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'teamviewer',
        protocol: 'tcp',
        subtypes: [],
@@ -2545,26 +2092,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
        name: 'companion-link',
        protocol: 'tcp',
        subtypes: [],
@@ -2584,77 +2111,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        rpVr: '152.1',
        rpBA: '82:76:39:20:15:A0' },
     addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'companion-link',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._companion-link._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 49185,
-    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
-    txtRecord: 
-     { rpHA: '8e7cc4b9a11d',
-       rpHN: 'e71e6c7aa7d3',
-       rpHI: '16816e055980',
-       rpVr: '152.1',
-       rpBA: '82:76:39:20:15:A0' },
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
   
 ┗ ----------------------------
 
@@ -2688,18 +2144,25 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'http',
+       name: 'companion-link',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-7860DW',
+    name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-7860DW._http._tcp.local.',
-    host: 'SKprint.local.',
-    port: 80,
-    addresses: [ '192.168.1.36' ] }
+    fullname: 'vMacpro1._companion-link._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 49185,
+    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
+    txtRecord: 
+     { rpHA: '8e7cc4b9a11d',
+       rpHN: 'e71e6c7aa7d3',
+       rpHI: '16816e055980',
+       rpVr: '152.1',
+       rpBA: '82:76:39:20:15:A0' },
+    addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
 
@@ -2722,2979 +2185,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     rawTxtRecord: <Buffer 19 6e 61 6d 65 3d 75 6e 69 66 69 2e 79 6f 75 72 64 6f 6d 61 69 6e 2e 63 6f 6d 06 70 61 74 68 3d 2f>,
     txtRecord: { name: 'unifi.yourdomain.com', path: '/' },
     addresses: [ '192.168.2.61' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'nvstream',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'CASTOR',
-    networkInterface: 'enp3s0',
-    fullname: 'CASTOR._nvstream._tcp.local.',
-    host: 'castor.local.',
-    port: 47989,
-    addresses: [ '192.168.2.187' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-down-services listeners added. Use emitter.setMaxListeners() to increase limit
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:27451) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-down-services listeners added. Use emitter.setMaxListeners() to increase limit
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  down
-  down
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-2',
-    networkInterface: 'lo',
-    fullname: 'caribou-2._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4324,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 32 0b 6e 61 6d 65 3d 73 6e 61 70 2d 32>,
-    txtRecord: { number: '2', name: 'snap-2' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-5',
-    networkInterface: 'lo',
-    fullname: 'caribou-5._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4321,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 35 0b 6e 61 6d 65 3d 73 6e 61 70 2d 35>,
-    txtRecord: { number: '5', name: 'snap-5' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-4',
-    networkInterface: 'lo',
-    fullname: 'caribou-4._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4322,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 34 0b 6e 61 6d 65 3d 73 6e 61 70 2d 34>,
-    txtRecord: { number: '4', name: 'snap-4' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'lo',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-1',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-1._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4325,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 31 0b 6e 61 6d 65 3d 73 6e 61 70 2d 31>,
-    txtRecord: { number: '1', name: 'snap-1' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 1,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'lo',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'localhost.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '127.0.0.1', '::1' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'snap',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'caribou-3',
-    networkInterface: 'enp3s0',
-    fullname: 'caribou-3._snap._tcp.local.',
-    host: 'caribou.local.',
-    port: 4323,
-    rawTxtRecord: <Buffer 08 6e 75 6d 62 65 72 3d 33 0b 6e 61 6d 65 3d 73 6e 61 70 2d 33>,
-    txtRecord: { number: '3', name: 'snap-3' },
-    addresses: [ '192.168.2.65' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
-  down
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  down
   
 ┗ ----------------------------
 

@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses">
+      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses" @click="hey(service)">
         <td>{{ service.name }}</td>
         <td>{{ service.port }}</td> 
         <td>{{ service.addresses[0] }}</td>
@@ -26,6 +26,12 @@ export default {
   data: function () {
     return {
       listServices: []
+    }
+  },
+  methods: {
+    hey: function (service) {
+      alert(service.name)
+      console.log(service)
     }
   },
   created () {
