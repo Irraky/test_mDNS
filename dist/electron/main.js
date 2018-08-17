@@ -3023,7 +3023,7 @@ br.on('serviceUp', function () {
             }).on('serviceDown', function (service) {
               var _this2 = this;
 
-              console.log('down');
+              console.log('down', service.name);
               __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
                 return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
                   while (1) {

@@ -16,6 +16,7 @@
       </tr>
     </tbody>
   </table>
+  <p id='serviceDetail'></p>
   </div>
 </template>
 
@@ -25,13 +26,25 @@ const ipc = require('electron-better-ipc')
 export default {
   data: function () {
     return {
-      listServices: []
+      listServices: [],
+      focusedService: null
     }
   },
   methods: {
     serviceDetails: function (service) {
-      alert(JSON.stringify(service), service.name)
-      console.log(service)
+      this.focusedService = ''
+      for (var property1 in service) {
+        if (property1 !== 'type' && property1 !== 'txtRecord' && property1 !== 'rawTxtRecord') {
+          this.focusedService = this.focusedService + property1 + ': ' + service[property1] + '\n'
+        }
+        if (property1 === 'rawTxtRecord') {
+          console.log(service[property1])
+          var txtRecord = property1 + ': ' + new TextDecoder('utf-8').decode(service[property1])
+          console.log(txtRecord)
+          this.focusedService = this.focusedService + txtRecord + '\n'
+        }
+      }
+      document.getElementById('serviceDetail').innerText = this.focusedService
     }
   },
   created () {
@@ -55,7 +68,6 @@ export default {
       }
     })
     ipc.answerMain('down-services', async newService => {
-      console.log(newService)
       for (var i = 0; i < this.listServices.length; i++) {
         if (this.listServices[i].name === newService.name) {
           break

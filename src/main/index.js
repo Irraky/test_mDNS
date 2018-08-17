@@ -88,7 +88,7 @@ br.on('serviceUp', async service => {
       })()
     })
     .on('serviceDown', function (service) {
-      console.log('down');
+      console.log('down', service.name);
       (async () => {
         await ipc.callRenderer(mainWindow, 'down-services', service)
       })()
