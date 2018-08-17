@@ -125,6 +125,7 @@ td {
   visibility: hidden;
 }
 .serviceDetailDiv {
+  float: right;
   border: 2px solid #2d8cb4;
   background-color: #f2f2f2;
   padding: 4px;
@@ -132,7 +133,7 @@ td {
   line-height: 16pt;
   max-height: 300px;
   max-width: 400px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h2 {
