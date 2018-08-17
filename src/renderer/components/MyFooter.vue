@@ -1,6 +1,6 @@
 <template>
   <div>
-    @irraky
+    Made by irraky
   </div>
 </template>
 

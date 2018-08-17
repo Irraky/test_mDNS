@@ -16,7 +16,10 @@
       </tr>
     </tbody>
   </table>
-  <p id='serviceDetail'></p>
+  <div :class="{serviceDetailDiv: true, serviceDivHidden: !focusedService}">
+    <h2>{{ focusedService.name }}</h2>
+    <p id='serviceDetail'></p>
+  </div>
   </div>
 </template>
 
@@ -27,24 +30,24 @@ export default {
   data: function () {
     return {
       listServices: [],
-      focusedService: null
+      focusedService: ''
     }
   },
   methods: {
     serviceDetails: function (service) {
-      this.focusedService = ''
+      this.focusedService = service
+      var serviceData = ''
       for (var property1 in service) {
-        if (property1 !== 'type' && property1 !== 'txtRecord' && property1 !== 'rawTxtRecord') {
-          this.focusedService = this.focusedService + property1 + ': ' + service[property1] + '\n'
+        if (property1 !== 'type' && property1 !== 'txtRecord' && property1 !== 'rawTxtRecord' && property1 !== 'name') {
+          serviceData = serviceData + property1 + ': ' + service[property1] + '\n'
         }
         if (property1 === 'rawTxtRecord') {
-          console.log(service[property1])
-          var txtRecord = property1 + ': ' + new TextDecoder('utf-8').decode(service[property1])
-          console.log(txtRecord)
-          this.focusedService = this.focusedService + txtRecord + '\n'
+          console.log(service[property1].lengt)
+          var txtRecord = property1 + ': ' + service[property1]
+          serviceData = serviceData + txtRecord + '\n'
         }
       }
-      document.getElementById('serviceDetail').innerText = this.focusedService
+      document.getElementById('serviceDetail').innerText = serviceData
     }
   },
   created () {
@@ -117,5 +120,25 @@ tr:hover {
 }
 td {
   overflow: auto; 
+}
+.serviceDivHidden {
+  visibility: hidden;
+}
+.serviceDetailDiv {
+  border: 2px solid #2d8cb4;
+  background-color: #f2f2f2;
+  padding: 4px;
+  margin: 20px;
+  line-height: 16pt;
+  max-height: 300px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 5px;
 }
 </style>
