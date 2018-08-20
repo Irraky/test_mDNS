@@ -27,8 +27,9 @@ body {
   overflow: hidden;
   overflow-y: visible;
 }
+
 #wrapper {
   height: 100vh;
-  padding: 60px 80px;
+  padding: 20px 80px;
 }
 </style>

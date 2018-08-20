@@ -1,7 +1,6 @@
 <template>
   <div>
-    <hr>
-    <p>Made by irraky</p>
+    <p class="about">Made by irraky</p>
   </div>
 </template>
 
@@ -12,22 +11,11 @@ export default {
 
 <style>
 
-#about {
-  float: right;
-  font-size: 2em;
-  margin-right: 9%;
-  color: #84c6d4;
-}
-
-hr {
+.about {
+  margin: 15px 0;
   display: block;
-  width: 80%;
-  margin: 25px 0px;
-}
-
-p {
-  display: block;
-  float: left;
+  text-align: center;
+  color: rgb(121, 184, 209);
 }
 
 </style>
