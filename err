@@ -2,13 +2,14 @@
 > jsonformat@0.0.0 build:web /home/mina/Code/test/test_mDNS
 > cross-env BUILD_TARGET=web node .electron-vue/build.js
 
-null
-Hash: [1mf380f3268a6b0c297159[39m[22m
+Hash: [1mb931c6e758ed01859d98[39m[22m
 Version: webpack [1m3.12.0[39m[22m
-Time: [1m9412[39m[22mms
-     [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
-    [1m[32mweb.js[39m[22m  159 kB       [1m0[39m[22m  [1m[32m[39m[22mweb
-[1m[32mstyles.css[39m[22m  2.5 kB       [1m0[39m[22m  [1m[32m[39m[22mweb
+Time: [1m9434[39m[22mms
+            [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+           [1m[32mweb.js[39m[22m     159 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  web
+       [1m[32mstyles.css[39m[22m     2.5 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  web
+       [1m[32mindex.html[39m[22m  389 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+[1m[32mstatic/static.png[39m[22m    11.1 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
    [5] [1m./node_modules/vue-loader/lib/component-normalizer.js[39m[22m 2.9 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
   [15] [1m(webpack)/buildin/global.js[39m[22m 509 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
   [24] [1m./node_modules/vue/dist/vue.esm.js[39m[22m 292 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
@@ -22,25 +23,13 @@ Time: [1m9412[39m[22mms
   [51] [1m./src/renderer/router/index.js[39m[22m 249 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
   [52] [1m./node_modules/vue-router/dist/vue-router.esm.js[39m[22m 65.6 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
   [53] [1m./src/renderer/components/Home.vue[39m[22m 1.44 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
- [109] [1m./src/renderer/store/index.js[39m[22m 0 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
- [110] [1m./node_modules/css-loader?minimize!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-04840e94","scoped":false,"hasInlineConfig":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./src/renderer/App.vue[39m[22m 351 bytes[1m[32m [built][39m[22m
-    + 105 hidden modules
-
-[1m[31mERROR in ./node_modules/electron/index.js
-Module not found: Error: Can't resolve 'fs' in '/home/mina/Code/test/test_mDNS/node_modules/electron'
- @ ./node_modules/electron/index.js 1:9-22
- @ ./node_modules/electron-better-ipc/source/renderer.js
- @ ./node_modules/electron-better-ipc/index.js
- @ ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/renderer/components/Main.vue
- @ ./src/renderer/components/Main.vue
- @ ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/renderer/components/Home.vue
- @ ./src/renderer/components/Home.vue
- @ ./src/renderer/router/index.js
- @ ./src/renderer/main.js[39m[22m
+ [110] [1m./src/renderer/store/index.js[39m[22m 0 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+ [111] [1m./node_modules/css-loader?minimize!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-04840e94","scoped":false,"hasInlineConfig":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./src/renderer/App.vue[39m[22m 351 bytes[1m[32m [built][39m[22m
+    + 106 hidden modules
 Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
          [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
     [1m[32mindex.html[39m[22m  569 kB       [1m0[39m[22m  [1m[32m[39m[22m
-       [0] [1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs[39m[22m 1.3 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+       [0] [1m./node_modules/html-webpack-plugin/lib/loader.js!./src/index.ejs[39m[22m 1.31 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
        [1] [1m./node_modules/lodash/lodash.js[39m[22m 540 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
        [2] [1m(webpack)/buildin/global.js[39m[22m 509 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
        [3] [1m(webpack)/buildin/module.js[39m[22m 517 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
