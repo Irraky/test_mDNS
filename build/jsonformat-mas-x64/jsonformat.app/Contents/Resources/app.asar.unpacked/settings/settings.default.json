@@ -1,0 +1,104 @@
+{
+  "spaces": [
+    {  
+      "text": "Spaces for a tab",
+      "key": 1,
+      "value": 0,
+      "disabled": true
+    },
+    {
+      "text": "one",
+      "key": 2,
+      "value": 1,
+      "disabled": false
+    },
+    {
+      "text": "two",
+      "key": 3,
+      "value": 2,
+      "disabled": false
+    },
+    {
+      "text": "three",
+      "key": 4,      
+      "value": 3,
+      "disabled": false
+    },
+    {
+      "text": "four",
+      "key": 5,
+      "value": 4,
+      "disabled": false
+    },
+    {
+      "text": "five",
+      "key": 6,
+      "value": 5,
+      "disabled": false
+    }
+  ],
+  "customSetting" : "defaultCustomSetting",
+  "window" : {
+    "width": 950,
+    "height": 540,
+    "kiosk": false,
+    "autoHideMenuBar": true,
+    "webPreferences": {
+      "plugins": true,
+      "directWrite": true,
+      "webSecurity": false,
+      "experimentalFeatures": false,
+      "experimentalCanvasFeatures": false,
+      "allowRunningInsecureContent": true,
+      "allowDisplayingInsecureContent": true
+    }
+  },
+  "appendSwitch": {
+    "--disable-pinch": "",
+    "--disable-touch-adjustment": "",
+    "--touch-events": ""
+  },
+  "service": {
+    "spacebro":{
+      "host": "spacebro.space",
+      "port": 3333,
+      "channelName": "media-stream",
+      "client": {
+        "name": "vue-example",
+        "description": "exemple app",
+				"in": {
+					"inMedia": {
+						"eventName": "inMedia",
+						"description": "Input media",
+						"type": "all"
+					},
+					"inMessage": {
+						"eventName": "inMessage",
+						"description": "Input message",
+						"type": "all"
+					}
+				},
+				"out": {
+					"outMedia": {
+						"eventName": "outMedia",
+						"description": "Output media",
+						"type": "all"
+					},
+					"outMessage": {
+						"eventName": "outMessage",
+						"description": "Output message",
+						"type": "all"
+					}
+        }
+      },
+      "connection": [
+        "vue-example/outMedia => vue-example/inMedia",
+        "vue-example/outMessage => vue-example/inMessage"
+      ]
+    }
+  },
+  "appendArgument": [
+    "--overscroll-history-navigation=0",
+    "--ignore-gpu-blacklist"
+  ]
+}
