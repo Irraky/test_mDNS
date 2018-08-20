@@ -17,6 +17,7 @@
     </tbody>
   </table>
   <div :class="{serviceDetailDiv: true, serviceDivHidden: !focusedService}">
+    <button class='closeButton' @click="closeDetailDiv"> X </button>
     <h2>{{ focusedService.name }}</h2>
     <p id='serviceDetail'></p>
   </div>
@@ -34,6 +35,10 @@ export default {
     }
   },
   methods: {
+    closeDetailDiv: function () {
+      document.getElementById('serviceDetail').innerText = ''
+      this.focusedService = ''
+    },
     serviceDetails: function (service) {
       this.focusedService = service
       var serviceData = ''
@@ -42,7 +47,7 @@ export default {
           serviceData = serviceData + property1 + ': ' + service[property1] + '\n'
         }
         if (property1 === 'rawTxtRecord') {
-          console.log(service[property1].lengt)
+          console.log(service[property1].length)
           var txtRecord = property1 + ': ' + service[property1]
           serviceData = serviceData + txtRecord + '\n'
         }
@@ -125,11 +130,12 @@ td {
   visibility: hidden;
 }
 .serviceDetailDiv {
-  float: right;
+  position: fixed;
+  top: 15px;
+  right: 15px;
   border: 2px solid #2d8cb4;
   background-color: #f2f2f2;
   padding: 4px;
-  margin: 20px;
   line-height: 16pt;
   max-height: 300px;
   max-width: 400px;
@@ -142,4 +148,11 @@ h2 {
   text-align: center;
   padding-bottom: 5px;
 }
+
+.closeButton {
+  float: right;
+  border: #2d8cb4 1px solid;
+  border-radius: 2px;
+}
+
 </style>

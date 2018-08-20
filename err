@@ -17,7 +17,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
   Hash: [1m47ab2a1da023f80a496b[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m2363[39m[22mms
+  Time: [1m2446[39m[22mms
     [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
   [1m[33mmain.js[39m[22m  [1m[33m270 kB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
      [0] [1mexternal "path"[39m[22m 42 bytes {[1m[33m0[39m[22m}[1m[31m [not cacheable][39m[22m
@@ -53,9 +53,9 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Renderer Process -----------
 
-  Hash: [1m3d718527a5733d364792[39m[22m
+  Hash: [1m92408c928d59e9244f7e[39m[22m
   Version: webpack [1m3.12.0[39m[22m
-  Time: [1m2757[39m[22mms
+  Time: [1m2850[39m[22mms
         [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
   [1m[33mrenderer.js[39m[22m    [1m[33m1.42 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  renderer
    [1m[32mindex.html[39m[22m  448 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
@@ -86,7 +86,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  Debugger listening on ws://127.0.0.1:5858/547214b9-c0cf-4726-85ec-cbaaa7ff8800
+  Debugger listening on ws://127.0.0.1:5858/29eb52b5-ccef-4efd-937a-631382ed3392
   For help see https://nodejs.org/en/docs/inspector
   
 ┗ ----------------------------
@@ -132,6 +132,66 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'uscan',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    txtRecord: 
+     { duplex: 'T',
+       is: 'adf,platen',
+       cs: 'binary,grayscale,color',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       pdl: 'application/pdf,image/jpeg',
+       note: '',
+       ty: 'Brother MFC-J6930DW',
+       rs: 'eSCL',
+       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       vers: '2.62',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'scanner',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 54921,
+    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
+    txtRecord: 
+     { flatbed: 'T',
+       feeder: 'T',
+       button: 'T',
+       mdl: 'MFC-J6930DW',
+       mfg: 'Brother',
+       ty: 'Brother MFC-J6930DW',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       note: '',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'bifrost',
        protocol: 'tcp',
        subtypes: [],
@@ -144,35 +204,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     host: 'buffle.local.',
     port: 3002,
     addresses: [ '192.168.2.61' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'privet',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
-    txtRecord: 
-     { cs: 'offline',
-       id: '',
-       type: 'printer',
-       url: 'https://www.google.com/cloudprint',
-       note: 'Brother MFC-J6930DW [3c2af44e0785]',
-       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -254,6 +285,168 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'printer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 515,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '50',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'duerqxesz5090',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'ipp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-7860DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-7860DW._ipp._tcp.local.',
+    host: 'SKprint.local.',
+    port: 631,
+    rawTxtRecord: <Buffer 06 54 42 43 50 3d 46 0d 54 72 61 6e 73 70 61 72 65 6e 74 3d 54 08 42 69 6e 61 72 79 3d 54 0d 50 61 70 65 72 43 75 73 74 6f 6d 3d 54 08 44 75 70 6c 65 ... >,
+    txtRecord: 
+     { TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Duplex: 'F',
+       Copies: 'T',
+       Color: 'F',
+       usb_MDL: 'MFC-7860DW',
+       usb_MFG: 'Brother',
+       priority: '50',
+       adminurl: 'http://SKprint.local./',
+       product: '(Brother MFC-7860DW)',
+       ty: 'Brother MFC-7860DW',
+       rp: 'duerqxesz5090',
+       pdl: 'application/vnd.hp-PCL',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.1.36' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'ipp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 631,
+    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
+    txtRecord: 
+     { 'mopria-certified': '1.3',
+       print_wfds: 'T',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       PaperMax: 'tabloid-A3',
+       kind: 'document,envelope,postcard,photo',
+       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
+       rfo: 'ipp/faxout',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '25',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'ipp/print',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'printer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 515,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '50',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'duerqxesz5090',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -288,32 +481,13 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'scanner',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 54921,
-    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
-    txtRecord: 
-     { flatbed: 'T',
-       feeder: 'T',
-       button: 'T',
-       mdl: 'MFC-J6930DW',
-       mfg: 'Brother',
-       ty: 'Brother MFC-J6930DW',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       note: '',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
+  (node:29448) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  (node:29448) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
   
 ┗ ----------------------------
 
@@ -322,7 +496,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'printer',
+       name: 'pdl-datastream',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -330,14 +504,14 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 515,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
+    port: 9100,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
     txtRecord: 
      { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'F',
-       Transparent: 'T',
+       TBCP: 'T',
+       Transparent: 'F',
        Binary: 'T',
        PaperCustom: 'T',
        Scan: 'T',
@@ -348,12 +522,11 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        usb_CMD: 'HBP,PJL',
        usb_MDL: 'MFC-J6930DW',
        usb_MFG: 'Brother',
-       priority: '50',
+       priority: '75',
        adminurl: 'http://BRN3C2AF44E0785.local./',
        product: '(Brother MFC-J6930DW)',
        ty: 'Brother MFC-J6930DW',
        note: '',
-       rp: 'duerqxesz5090',
        pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
        qtotal: '1',
        txtvers: '1' },
@@ -366,7 +539,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'printer',
+       name: 'uscan',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -374,32 +547,22 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._printer._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 515,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 46 0d ... >,
+    port: 80,
+    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
     txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '50',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
+     { duplex: 'T',
+       is: 'adf,platen',
+       cs: 'binary,grayscale,color',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       pdl: 'application/pdf,image/jpeg',
        note: '',
-       rp: 'duerqxesz5090',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
+       ty: 'Brother MFC-J6930DW',
+       rs: 'eSCL',
+       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       vers: '2.62',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -449,53 +612,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'ipp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-7860DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-7860DW._ipp._tcp.local.',
-    host: 'SKprint.local.',
-    port: 631,
-    rawTxtRecord: <Buffer 06 54 42 43 50 3d 46 0d 54 72 61 6e 73 70 61 72 65 6e 74 3d 54 08 42 69 6e 61 72 79 3d 54 0d 50 61 70 65 72 43 75 73 74 6f 6d 3d 54 08 44 75 70 6c 65 ... >,
-    txtRecord: 
-     { TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Duplex: 'F',
-       Copies: 'T',
-       Color: 'F',
-       usb_MDL: 'MFC-7860DW',
-       usb_MFG: 'Brother',
-       priority: '50',
-       adminurl: 'http://SKprint.local./',
-       product: '(Brother MFC-7860DW)',
-       ty: 'Brother MFC-7860DW',
-       rp: 'duerqxesz5090',
-       pdl: 'application/vnd.hp-PCL',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.1.36' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:28585) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-data-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  (node:28585) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 %better-ipc-response-error-channel-1-send-services listeners added. Use emitter.setMaxListeners() to increase limit
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'pdl-datastream',
+       name: 'privet',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -503,106 +620,17 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 9100,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    port: 80,
+    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
     txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'T',
-       Transparent: 'F',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '75',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'teamviewer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: '0',
-    networkInterface: 'enp3s0',
-    fullname: '0._teamviewer._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
-    txtRecord: 
-     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
-       Token: 'hDPLx2ch7zT0i0R8',
-       DyngateID: '987213973' },
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'ipp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 631,
-    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
-    txtRecord: 
-     { 'mopria-certified': '1.3',
-       print_wfds: 'T',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       PaperMax: 'tabloid-A3',
-       kind: 'document,envelope,postcard,photo',
-       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
-       rfo: 'ipp/faxout',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '25',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       rp: 'ipp/print',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
+     { cs: 'offline',
+       id: '',
+       type: 'printer',
+       url: 'https://www.google.com/cloudprint',
+       note: 'Brother MFC-J6930DW [3c2af44e0785]',
+       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -678,41 +706,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8919,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1 (2)',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8918,
-    addresses: [ '192.168.2.157' ] }
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -746,20 +739,50 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.1.36' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'xrdovertcp',
+       name: 'teamviewer',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'vMacpro1',
+    name: '0',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
+    fullname: '0._teamviewer._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 5454,
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
+    txtRecord: 
+     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
+       Token: 'hDPLx2ch7zT0i0R8',
+       DyngateID: '987213973' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1 (2)',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8918,
     addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
@@ -784,7 +807,22 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'afpovertcp',
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'xrdovertcp',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -792,9 +830,24 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._afpovertcp._tcp.local.',
+    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 548,
+    port: 5454,
+    addresses: [ '192.168.2.157' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8919,
     addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
@@ -844,7 +897,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'companion-link',
+       name: 'afpovertcp',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -852,16 +905,9 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._companion-link._tcp.local.',
+    fullname: 'vMacpro1._afpovertcp._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 49185,
-    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
-    txtRecord: 
-     { rpHA: '8e7cc4b9a11d',
-       rpHN: 'e71e6c7aa7d3',
-       rpHI: '16816e055980',
-       rpVr: '152.1',
-       rpBA: '82:76:39:20:15:A0' },
+    port: 548,
     addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
@@ -918,23 +964,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'teamviewer',
+       name: 'http',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: '308037408',
+    name: 'Brother MFC-7860DW',
     networkInterface: 'enp3s0',
-    fullname: '308037408._teamviewer._tcp.local.',
-    host: 'DESKTOP-KD1KJ05.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 61 66 32 32 62 61 63 30 2d 61 63 37 39 2d 34 33 65 34 2d 38 38 35 35 2d 66 35 34 65 34 36 35 62 33 34 31 63 16 54 6f 6b 65 6e 3d 70 ... >,
-    txtRecord: 
-     { UUID: 'af22bac0-ac79-43e4-8855-f54e465b341c',
-       Token: 'pSmNfhSRgwG4W2fs',
-       DyngateID: '308037408' },
-    addresses: [ '192.168.2.84' ] }
+    fullname: 'Brother\\032MFC-7860DW._http._tcp.local.',
+    host: 'SKprint.local.',
+    port: 80,
+    addresses: [ '192.168.1.36' ] }
   
 ┗ ----------------------------
 
@@ -949,12 +990,44 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-7860DW',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-7860DW._http._tcp.local.',
-    host: 'SKprint.local.',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
     port: 80,
-    addresses: [ '192.168.1.36' ] }
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._companion-link._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 49185,
+    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
+    txtRecord: 
+     { rpHA: '8e7cc4b9a11d',
+       rpHN: 'e71e6c7aa7d3',
+       rpHI: '16816e055980',
+       rpVr: '152.1',
+       rpBA: '82:76:39:20:15:A0' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -972,21 +1045,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     rawTxtRecord: <Buffer 19 6e 61 6d 65 3d 75 6e 69 66 69 2e 79 6f 75 72 64 6f 6d 61 69 6e 2e 63 6f 6d 06 70 61 74 68 3d 2f>,
     txtRecord: { name: 'unifi.yourdomain.com', path: '/' },
     addresses: [ '192.168.2.61' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -1029,6 +1087,35 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'uscan',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    txtRecord: 
+     { duplex: 'T',
+       is: 'adf,platen',
+       cs: 'binary,grayscale,color',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       pdl: 'application/pdf,image/jpeg',
+       note: '',
+       ty: 'Brother MFC-J6930DW',
+       rs: 'eSCL',
+       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       vers: '2.62',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'bifrost',
        protocol: 'tcp',
        subtypes: [],
@@ -1041,6 +1128,31 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     host: 'buffle.local.',
     port: 3002,
     addresses: [ '192.168.2.61' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'teamviewer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: '967148895',
+    networkInterface: 'enp3s0',
+    fullname: '967148895._teamviewer._tcp.local.',
+    host: 'DESKTOP-F0F9UHP.local.',
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 30 66 36 32 65 63 34 2d 65 31 32 62 2d 34 63 35 66 2d 61 33 63 66 2d 61 32 35 36 65 65 39 37 61 31 30 37 16 54 6f 6b 65 6e 3d 31 ... >,
+    txtRecord: 
+     { UUID: 'e0f62ec4-e12b-4c5f-a3cf-a256ee97a107',
+       Token: '13OSKlE3pVljoTkU',
+       DyngateID: '967148895' },
+    addresses: [ '192.168.2.94' ] }
   
 ┗ ----------------------------
 
@@ -1103,7 +1215,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'uscan',
+       name: 'privet',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -1111,53 +1223,17 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
     port: 80,
-    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
     txtRecord: 
-     { duplex: 'T',
-       is: 'adf,platen',
-       cs: 'binary,grayscale,color',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       pdl: 'application/pdf,image/jpeg',
-       note: '',
-       ty: 'Brother MFC-J6930DW',
-       rs: 'eSCL',
-       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       vers: '2.62',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'scanner',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 54921,
-    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
-    txtRecord: 
-     { flatbed: 'T',
-       feeder: 'T',
-       button: 'T',
-       mdl: 'MFC-J6930DW',
-       mfg: 'Brother',
-       ty: 'Brother MFC-J6930DW',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       note: '',
+     { cs: 'offline',
+       id: '',
+       type: 'printer',
+       url: 'https://www.google.com/cloudprint',
+       note: 'Brother MFC-J6930DW [3c2af44e0785]',
+       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -1189,11 +1265,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        ty: 'Brother MFC-J6930DW [3c2af44e0785]',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -1218,35 +1289,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        ty: 'Brother MFC-J6930DW',
        adminurl: 'http://BRN3C2AF44E0785.local./',
        note: '',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'privet',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._privet._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 0a 63 73 3d 6f 66 66 6c 69 6e 65 03 69 64 3d 0c 74 79 70 65 3d 70 72 69 6e 74 65 72 25 75 72 6c 3d 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ... >,
-    txtRecord: 
-     { cs: 'offline',
-       id: '',
-       type: 'printer',
-       url: 'https://www.google.com/cloudprint',
-       note: 'Brother MFC-J6930DW [3c2af44e0785]',
-       ty: 'Brother MFC-J6930DW [3c2af44e0785]',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   new service up:  { interfaceIndex: 2,
@@ -1302,7 +1344,7 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'ipp',
+       name: 'scanner',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
@@ -1310,38 +1352,19 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     flags: 2,
     name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
+    fullname: 'Brother\\032MFC-J6930DW._scanner._tcp.local.',
     host: 'BRN3C2AF44E0785.local.',
-    port: 631,
-    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
+    port: 54921,
+    rawTxtRecord: <Buffer 09 66 6c 61 74 62 65 64 3d 54 08 66 65 65 64 65 72 3d 54 08 62 75 74 74 6f 6e 3d 54 0f 6d 64 6c 3d 4d 46 43 2d 4a 36 39 33 30 44 57 0b 6d 66 67 3d 42 ... >,
     txtRecord: 
-     { 'mopria-certified': '1.3',
-       print_wfds: 'T',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       PaperMax: 'tabloid-A3',
-       kind: 'document,envelope,postcard,photo',
-       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
-       rfo: 'ipp/faxout',
-       TBCP: 'F',
-       Transparent: 'T',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '25',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       product: '(Brother MFC-J6930DW)',
+     { flatbed: 'T',
+       feeder: 'T',
+       button: 'T',
+       mdl: 'MFC-J6930DW',
+       mfg: 'Brother',
        ty: 'Brother MFC-J6930DW',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
        note: '',
-       rp: 'ipp/print',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
   
@@ -1435,6 +1458,51 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'ipp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._ipp._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 631,
+    rawTxtRecord: <Buffer 14 6d 6f 70 72 69 61 2d 63 65 72 74 69 66 69 65 64 3d 31 2e 33 0c 70 72 69 6e 74 5f 77 66 64 73 3d 54 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 ... >,
+    txtRecord: 
+     { 'mopria-certified': '1.3',
+       print_wfds: 'T',
+       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       PaperMax: 'tabloid-A3',
+       kind: 'document,envelope,postcard,photo',
+       URF: 'SRGB24,W8,CP1,IS19-1-21,MT1-8-11,OB9,PQ4-5,RS200-300,OFU0,V1.4,DM4',
+       rfo: 'ipp/faxout',
+       TBCP: 'F',
+       Transparent: 'T',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '25',
+       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       rp: 'ipp/print',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'printer',
        protocol: 'tcp',
        subtypes: [],
@@ -1471,11 +1539,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -1514,18 +1577,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        qtotal: '1',
        txtvers: '1' },
     addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:28585) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: type nvstream_dbd may only contain alphanumeric characters and hyphens
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  (node:28585) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
   
 ┗ ----------------------------
 
@@ -1573,41 +1624,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'pdl-datastream',
+       name: 'nvstream',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-J6930DW',
+    name: 'CASTOR',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 9100,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
-    txtRecord: 
-     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       TBCP: 'T',
-       Transparent: 'F',
-       Binary: 'T',
-       PaperCustom: 'T',
-       Scan: 'T',
-       Fax: 'T',
-       Duplex: 'T',
-       Copies: 'F',
-       Color: 'T',
-       usb_CMD: 'HBP,PJL',
-       usb_MDL: 'MFC-J6930DW',
-       usb_MFG: 'Brother',
-       priority: '75',
-       adminurl: 'http://BRN3C2AF44E0785.local./',
-       product: '(Brother MFC-J6930DW)',
-       ty: 'Brother MFC-J6930DW',
-       note: '',
-       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
-       qtotal: '1',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
+    fullname: 'CASTOR._nvstream._tcp.local.',
+    host: 'castor.local.',
+    port: 47989,
+    addresses: [ '192.168.2.187' ] }
   
 ┗ ----------------------------
 
@@ -1651,21 +1679,51 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
 
 ┏ Electron -------------------
 
+  (node:29448) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: type nvstream_dbd may only contain alphanumeric characters and hyphens
+  (node:29448) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'nvstream',
+       name: 'pdl-datastream',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'CASTOR',
+    name: 'Brother MFC-J6930DW',
     networkInterface: 'enp3s0',
-    fullname: 'CASTOR._nvstream._tcp.local.',
-    host: 'castor.local.',
-    port: 47989,
-    addresses: [ '192.168.2.187' ] }
+    fullname: 'Brother\\032MFC-J6930DW._pdl-datastream._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 9100,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 33 32 34 38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38 30 30 30 2d 33 63 32 61 66 34 34 65 30 37 38 35 06 54 42 43 50 3d 54 0d ... >,
+    txtRecord: 
+     { UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
+       TBCP: 'T',
+       Transparent: 'F',
+       Binary: 'T',
+       PaperCustom: 'T',
+       Scan: 'T',
+       Fax: 'T',
+       Duplex: 'T',
+       Copies: 'F',
+       Color: 'T',
+       usb_CMD: 'HBP,PJL',
+       usb_MDL: 'MFC-J6930DW',
+       usb_MFG: 'Brother',
+       priority: '75',
+       adminurl: 'http://BRN3C2AF44E0785.local./',
+       product: '(Brother MFC-J6930DW)',
+       ty: 'Brother MFC-J6930DW',
+       note: '',
+       pdl: 'application/octet-stream,image/urf,image/jpeg,image/pwg-raster,application/vnd.brother-hbp',
+       qtotal: '1',
+       txtvers: '1' },
+    addresses: [ '192.168.2.177' ] }
   
 ┗ ----------------------------
 
@@ -1694,91 +1752,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'xrdovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 5454,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8919,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'teamviewer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: '967148895',
-    networkInterface: 'enp3s0',
-    fullname: '967148895._teamviewer._tcp.local.',
-    host: 'DESKTOP-F0F9UHP.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 65 30 66 36 32 65 63 34 2d 65 31 32 62 2d 34 63 35 66 2d 61 33 63 66 2d 61 32 35 36 65 65 39 37 61 31 30 37 16 54 6f 6b 65 6e 3d 31 ... >,
-    txtRecord: 
-     { UUID: 'e0f62ec4-e12b-4c5f-a3cf-a256ee97a107',
-       Token: '13OSKlE3pVljoTkU',
-       DyngateID: '967148895' },
-    addresses: [ '192.168.2.94' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
        name: 'afpovertcp',
        protocol: 'tcp',
        subtypes: [],
@@ -1790,136 +1763,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
     fullname: 'vMacpro1._afpovertcp._tcp.local.',
     host: 'vMacpro1.local.',
     port: 548,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'xrdovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 5454,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'Brother MFC-J6930DW',
-    networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'teamviewer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: '0',
-    networkInterface: 'enp3s0',
-    fullname: '0._teamviewer._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
-    txtRecord: 
-     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
-       Token: 'hDPLx2ch7zT0i0R8',
-       DyngateID: '987213973' },
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'afpovertcp',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._afpovertcp._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 548,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'http',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1 (2)',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 8918,
-    addresses: [ '192.168.2.157' ] }
-  
-┗ ----------------------------
-
-┏ Electron -------------------
-
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'teamviewer',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: '0',
-    networkInterface: 'enp3s0',
-    fullname: '0._teamviewer._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 2020,
-    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
-    txtRecord: 
-     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
-       Token: 'hDPLx2ch7zT0i0R8',
-       DyngateID: '987213973' },
     addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
@@ -1954,6 +1797,111 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
+       name: 'afpovertcp',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._afpovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 548,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8919,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'teamviewer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: '308037408',
+    networkInterface: 'enp3s0',
+    fullname: '308037408._teamviewer._tcp.local.',
+    host: 'DESKTOP-KD1KJ05.local.',
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 61 66 32 32 62 61 63 30 2d 61 63 37 39 2d 34 33 65 34 2d 38 38 35 35 2d 66 35 34 65 34 36 35 62 33 34 31 63 16 54 6f 6b 65 6e 3d 70 ... >,
+    txtRecord: 
+     { UUID: 'af22bac0-ac79-43e4-8855-f54e465b341c',
+       Token: 'pSmNfhSRgwG4W2fs',
+       DyngateID: '308037408' },
+    addresses: [ '192.168.2.84' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._http._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 8919,
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
        name: 'companion-link',
        protocol: 'tcp',
        subtypes: [],
@@ -1987,12 +1935,17 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'vMacpro1',
+    name: 'vMacpro1 (2)',
     networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._http._tcp.local.',
+    fullname: 'vMacpro1\\032\\0402\\041._http._tcp.local.',
     host: 'vMacpro1.local.',
-    port: 8919,
+    port: 8918,
     addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
@@ -2013,28 +1966,6 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        Token: '13OSKlE3pVljoTkU',
        DyngateID: '967148895' },
     addresses: [ '192.168.2.94' ] }
-  new service up:  { interfaceIndex: 2,
-    type: 
-     ServiceType {
-       name: 'companion-link',
-       protocol: 'tcp',
-       subtypes: [],
-       fullyQualified: true },
-    replyDomain: 'local.',
-    flags: 2,
-    name: 'vMacpro1',
-    networkInterface: 'enp3s0',
-    fullname: 'vMacpro1._companion-link._tcp.local.',
-    host: 'vMacpro1.local.',
-    port: 49185,
-    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
-    txtRecord: 
-     { rpHA: '8e7cc4b9a11d',
-       rpHN: 'e71e6c7aa7d3',
-       rpHI: '16816e055980',
-       rpVr: '152.1',
-       rpBA: '82:76:39:20:15:A0' },
-    addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
 
@@ -2069,6 +2000,53 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
+    name: 'Brother MFC-J6930DW',
+    networkInterface: 'enp3s0',
+    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
+    host: 'BRN3C2AF44E0785.local.',
+    port: 80,
+    addresses: [ '192.168.2.177' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'vMacpro1',
+    networkInterface: 'enp3s0',
+    fullname: 'vMacpro1._companion-link._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 49185,
+    rawTxtRecord: <Buffer 11 72 70 48 41 3d 38 65 37 63 63 34 62 39 61 31 31 64 11 72 70 48 4e 3d 65 37 31 65 36 63 37 61 61 37 64 33 11 72 70 48 49 3d 31 36 38 31 36 65 30 35 ... >,
+    txtRecord: 
+     { rpHA: '8e7cc4b9a11d',
+       rpHN: 'e71e6c7aa7d3',
+       rpHI: '16816e055980',
+       rpVr: '152.1',
+       rpBA: '82:76:39:20:15:A0' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'http',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
     name: 'UniFi Controller (unifi_yourdomain_com)',
     networkInterface: 'enp3s0',
     fullname: 'UniFi\\032Controller\\032\\040unifi_yourdomain_com\\041._http._tcp.local.',
@@ -2085,18 +2063,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'http',
+       name: 'xrdovertcp',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-J6930DW',
+    name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._http._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    addresses: [ '192.168.2.177' ] }
+    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 5454,
+    addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
 
@@ -2105,32 +2083,18 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'uscan',
+       name: 'xrdovertcp',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-J6930DW',
+    name: 'vMacpro1',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
-    txtRecord: 
-     { duplex: 'T',
-       is: 'adf,platen',
-       cs: 'binary,grayscale,color',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       pdl: 'application/pdf,image/jpeg',
-       note: '',
-       ty: 'Brother MFC-J6930DW',
-       rs: 'eSCL',
-       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       vers: '2.62',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
+    fullname: 'vMacpro1._xrdovertcp._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 5454,
+    addresses: [ '192.168.2.157' ] }
   
 ┗ ----------------------------
 
@@ -2139,32 +2103,593 @@ The `setup` option is deprecated and will be removed in v3. Please update your c
   new service up:  { interfaceIndex: 2,
     type: 
      ServiceType {
-       name: 'uscan',
+       name: 'teamviewer',
        protocol: 'tcp',
        subtypes: [],
        fullyQualified: true },
     replyDomain: 'local.',
     flags: 2,
-    name: 'Brother MFC-J6930DW',
+    name: '0',
     networkInterface: 'enp3s0',
-    fullname: 'Brother\\032MFC-J6930DW._uscan._tcp.local.',
-    host: 'BRN3C2AF44E0785.local.',
-    port: 80,
-    rawTxtRecord: <Buffer 08 64 75 70 6c 65 78 3d 54 0d 69 73 3d 61 64 66 2c 70 6c 61 74 65 6e 19 63 73 3d 62 69 6e 61 72 79 2c 67 72 61 79 73 63 61 6c 65 2c 63 6f 6c 6f 72 29 ... >,
+    fullname: '0._teamviewer._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
     txtRecord: 
-     { duplex: 'T',
-       is: 'adf,platen',
-       cs: 'binary,grayscale,color',
-       UUID: 'e3248000-80ce-11db-8000-3c2af44e0785',
-       pdl: 'application/pdf,image/jpeg',
-       note: '',
-       ty: 'Brother MFC-J6930DW',
-       rs: 'eSCL',
-       representation: 'http://BRN3C2AF44E0785.local./icons/device-icons-128.png',
-       adminurl: 'http://BRN3C2AF44E0785.local./net/net/airprint.html',
-       vers: '2.62',
-       txtvers: '1' },
-    addresses: [ '192.168.2.177' ] }
+     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
+       Token: 'hDPLx2ch7zT0i0R8',
+       DyngateID: '987213973' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'teamviewer',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: '0',
+    networkInterface: 'enp3s0',
+    fullname: '0._teamviewer._tcp.local.',
+    host: 'vMacpro1.local.',
+    port: 2020,
+    rawTxtRecord: <Buffer 29 55 55 49 44 3d 30 66 39 36 30 61 33 39 2d 63 36 39 36 2d 34 64 34 66 2d 38 63 31 36 2d 62 32 33 66 37 61 33 33 64 64 66 37 16 54 6f 6b 65 6e 3d 68 ... >,
+    txtRecord: 
+     { UUID: '0f960a39-c696-4d4f-8c16-b23f7a33ddf7',
+       Token: 'hDPLx2ch7zT0i0R8',
+       DyngateID: '987213973' },
+    addresses: [ '192.168.2.157' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  down Gabriel’s iPad
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  new service up:  { interfaceIndex: 2,
+    type: 
+     ServiceType {
+       name: 'companion-link',
+       protocol: 'tcp',
+       subtypes: [],
+       fullyQualified: true },
+    replyDomain: 'local.',
+    flags: 2,
+    name: 'Gabriel’s iPad',
+    networkInterface: 'enp3s0',
+    fullname: 'Gabriel\\226\\128\\153s\\032iPad._companion-link._tcp.local.',
+    host: 'Gabriels-iPad.local.',
+    port: 50604,
+    rawTxtRecord: <Buffer 0b 72 70 56 72 3d 31 35 30 2e 31 31 16 72 70 42 41 3d 37 32 3a 34 39 3a 39 46 3a 42 39 3a 34 44 3a 46 33>,
+    txtRecord: { rpVr: '150.11', rpBA: '72:49:9F:B9:4D:F3' },
+    addresses: [ '192.168.2.50' ] }
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
+  
+┗ ----------------------------
+
+┏ Electron -------------------
+
+  down Gabriel’s iPad
   
 ┗ ----------------------------
 
