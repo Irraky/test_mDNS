@@ -1,6 +1,7 @@
 <template>
   <div>
-    Made by irraky
+    <hr>
+    <p>Made by irraky</p>
   </div>
 </template>
 
@@ -16,6 +17,17 @@ export default {
   font-size: 2em;
   margin-right: 9%;
   color: #84c6d4;
+}
+
+hr {
+  display: block;
+  width: 80%;
+  margin: 25px 0px;
+}
+
+p {
+  display: block;
+  float: left;
 }
 
 </style>

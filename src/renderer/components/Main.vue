@@ -44,7 +44,10 @@ export default {
       var serviceData = ''
       for (var property1 in service) {
         if (property1 !== 'type' && property1 !== 'txtRecord' && property1 !== 'rawTxtRecord' && property1 !== 'name') {
-          serviceData = serviceData + property1 + ': ' + service[property1] + '\n'
+          var detailName = property1.replace(/^\w/, function ($0) {
+            return $0.toUpperCase()
+          })
+          serviceData = serviceData + detailName + ': ' + service[property1] + '\n'
         }
         if (property1 === 'rawTxtRecord') {
           console.log(service[property1].length)
