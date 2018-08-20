@@ -92,35 +92,34 @@ export default {
 
 <style>
 .jsonarea {
-  display: inline-block;
+  display: block;
   min-width: 200px;
+  text-align: center;
 }
 
-table, td, th {    
-    border: 1px solid #ddd;
-    text-align: left;
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 th, td {
-    padding: 15px;
-    
+  padding: 15px;
 }
 
 th {
   font-weight: bold;
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
   background-color: #21abca;
   color: white;
 }
 
-tr:nth-child(even ){
+tr:nth-child(even){
   background-color: #f2f2f2;
 }
 tr:hover {
@@ -134,8 +133,8 @@ td {
 }
 .serviceDetailDiv {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  bottom: 30px;
+  right: 30px;
   border: 2px solid #2d8cb4;
   background-color: #f2f2f2;
   padding: 4px;
@@ -143,6 +142,7 @@ td {
   max-height: 300px;
   max-width: 400px;
   overflow: auto;
+  text-align: left;
 }
 
 h2 {
