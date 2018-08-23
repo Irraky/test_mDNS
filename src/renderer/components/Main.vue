@@ -17,7 +17,7 @@
     </tbody>
   </table>
   <div :class="{serviceDetailDiv: true, serviceDivHidden: !focusedService}">
-    <button class='closeButton' @click="closeDetailDiv"> X </button>
+    <button class='closeButton' @click="closeDetail"> X </button>
     <h2>{{ focusedService.name }}</h2>
     <p id='serviceDetail'></p>
   </div>
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import {mapActions, mapGetters} from 'vuex'
 const ipc = require('electron-better-ipc')
 
 export default {
@@ -34,8 +35,14 @@ export default {
       focusedService: ''
     }
   },
+  computed: {
+    ...mapGetters({
+      serviceList: 'serviceList'
+    })
+  },
   methods: {
-    closeDetailDiv: function () {
+    ...mapActions(['addService']),
+    closeDetail: function () {
       document.getElementById('serviceDetail').innerText = ''
       this.focusedService = ''
     },
@@ -73,6 +80,8 @@ export default {
         }
         if (exist === 0) {
           this.listServices.push(newService)
+          this.addService(newService)
+          console.log(this.serviceList)
         } else {
           this.listServices.splice(i, 1, newService)
         }

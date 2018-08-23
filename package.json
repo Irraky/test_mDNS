@@ -32,7 +32,8 @@
     "install": "^0.11.0",
     "mdns": "^2.4.0",
     "standard-settings": "^1.1.8",
-    "vue-router": "^2.5.3"
+    "vue-router": "^2.5.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
