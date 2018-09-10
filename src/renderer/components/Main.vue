@@ -1,26 +1,26 @@
 <template>
   <div class="jsonarea">
-  <table class="tableau">
-    <thead>
-      <tr>
-        <th>Service Name</th>
-        <th>Address</th>
-        <th>Port</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="service in serviceList" v-bind:key="service.name + service.port + service.addresses" @click="serviceDetails(service)">
-        <td>{{ service.name }}</td>
-        <td>{{ service.port }}</td> 
-        <td>{{ service.addresses[0] }}</td>
-      </tr>
-    </tbody>
-  </table>
-  <div :class="{serviceDetailDiv: true, serviceDivHidden: !focusedService}">
-    <button class='closeButton' @click="closeDetail"> X </button>
-    <h2>{{ focusedService.name }}</h2>
-    <p id='serviceDetail'></p>
-  </div>
+    <table class="tableau">
+      <thead>
+        <tr>
+          <th>Service Name</th>
+          <th>Address</th>
+          <th>Port</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="service in serviceList" v-bind:key="service.name + service.port + service.addresses" @click="serviceDetails(service)">
+          <td>{{ service.name }}</td>
+          <td>{{ service.port }}</td> 
+          <td>{{ service.addresses[0] }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div v-show="focusedService" class="serviceDetailDiv">
+      <button class='closeButton' @click="closeDetail"> X </button>
+      <h2>{{ focusedService.name }}</h2>
+      <p v-html="focusedServiceDetails"></p>
+    </div>
   </div>
 </template>
 
@@ -31,7 +31,8 @@ const ipc = require('electron-better-ipc')
 export default {
   data: function () {
     return {
-      focusedService: ''
+      focusedService: '',
+      focusedServiceDetails: ''
     }
   },
   computed: {
@@ -44,6 +45,7 @@ export default {
     closeDetail: function () {
       document.getElementById('serviceDetail').innerText = ''
       this.focusedService = ''
+      this.focusedServiceDetails = ''
     },
     serviceDetails: function (service) {
       this.focusedService = service
@@ -53,15 +55,15 @@ export default {
           var detailName = property1.replace(/^\w/, function ($0) {
             return $0.toUpperCase()
           })
-          serviceData = serviceData + detailName + ': ' + service[property1] + '\n'
+          serviceData = serviceData + detailName + ': ' + service[property1] + '<br>'
         }
         if (property1 === 'rawTxtRecord') {
           console.log(service[property1].length)
           var txtRecord = property1 + ': ' + service[property1]
-          serviceData = serviceData + txtRecord + '\n'
+          serviceData = serviceData + txtRecord + '<br>'
         }
       }
-      document.getElementById('serviceDetail').innerText = serviceData
+      this.focusedServiceDetails = serviceData
     }
   },
   created () {
