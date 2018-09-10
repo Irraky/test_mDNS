@@ -15,8 +15,29 @@ export default new Vuex.Store({
   },
 
   actions: {
-    addService ({commit}, newService) {
-      commit('pushService', newService)
+    addService ({commit, state}, newService) {
+      var exist = 0
+      for (var i = 0; i < state.services.length; i++) {
+        if (this.state.services[i].addresses[0] === newService.addresses[0] &&
+          state.services[i].port === newService.port &&
+          state.services[i].name === newService.name) {
+          exist = 1
+          break
+        }
+      }
+      if (exist === 0) {
+        commit('pushService', newService)
+      }
+    },
+    removeService ({commit, state}, newService) {
+      for (var i = 0; i < state.services.length; i++) {
+        if (state.services[i].name === newService.name) {
+          break
+        }
+      }
+      if (i < state.services.length) {
+        commit('splitService', i)
+      }
     }
   },
 
@@ -24,8 +45,9 @@ export default new Vuex.Store({
     pushService (state, newService) {
       state.services.push(newService)
     },
-    splitService (state, newService, index) {
-      state.services.split(index, 1, newService)
+    splitService (state, index) {
+      console.log('splice: ', state.services[index].name)
+      state.services.splice(index, 1)
     }
   }
 })

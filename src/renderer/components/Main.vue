@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="service in listServices" v-bind:key="service.name + service.port + service.addresses" @click="serviceDetails(service)">
+      <tr v-for="service in serviceList" v-bind:key="service.name + service.port + service.addresses" @click="serviceDetails(service)">
         <td>{{ service.name }}</td>
         <td>{{ service.port }}</td> 
         <td>{{ service.addresses[0] }}</td>
@@ -31,7 +31,6 @@ const ipc = require('electron-better-ipc')
 export default {
   data: function () {
     return {
-      listServices: [],
       focusedService: ''
     }
   },
@@ -66,34 +65,13 @@ export default {
     }
   },
   created () {
-    this.listServices = []
     ipc.answerMain('send-services', async newService => {
       if (newService.port && newService.name && newService.addresses[0]) {
-        var exist = 0
-        for (var i = 0; i < this.listServices.length; i++) {
-          if (this.listServices[i].addresses[0] === newService.addresses[0] &&
-          this.listServices[i].port === newService.port &&
-          this.listServices[i].name === newService.name) {
-            exist = 1
-            break
-          }
-        }
-        if (exist === 0) {
-          this.listServices.push(newService)
-          this.addService(newService)
-          console.log(this.serviceList)
-        } else {
-          this.listServices.splice(i, 1, newService)
-        }
+        this.addService(newService)
       }
     })
     ipc.answerMain('down-services', async newService => {
-      for (var i = 0; i < this.listServices.length; i++) {
-        if (this.listServices[i].name === newService.name) {
-          break
-        }
-      }
-      this.listServices.splice(i, 1)
+      this.removeService(newService)
     })
   }
 }
