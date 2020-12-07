@@ -1,10 +1,6 @@
 # JsonVerifier
 
-> An electron-vue project to validate your JSON and to Format it.
-
-## Test this project
-
-You can go on <a href="https://json-verify.firebaseapp.com/#/">the page</a> to test it.
+> An electron-vue project.
 
 #### Build Setup
 
