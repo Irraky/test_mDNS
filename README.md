@@ -1,4 +1,4 @@
-# JsonVerifier
+# mDNS checker
 
 > An electron-vue project.
 
